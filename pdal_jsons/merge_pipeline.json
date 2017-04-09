@@ -1,0 +1,19 @@
+# SRER 2011 lidar tiles merged into single *.laz
+# Sample docker command-line to start:
+# docker run -v ${PWD}:/data pdal/pdal:1.5 pdal pipeline merge_pipeline.json
+{
+  "pipeline": [
+    "/data/19S15E06_LDRY11.las",
+    "/data/19S14E01_LDRY11.las",
+    "/data/18S15E31_LDRY11.las",
+    "/data/18S14E36_LDRY11.las",
+    {
+      "type":"filters.merge"
+    },
+    {
+      "type":"writers.las",
+      "compression":"lazperf",
+      "filename":"/data/srer_output.laz"
+    }
+  ]
+}
