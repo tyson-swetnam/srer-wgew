@@ -50,10 +50,24 @@ The goal of this tutorial is to get you up and running with the same VM images, 
 
 |Input File(s)|Format|Preparation/Notes|Example Data|
 |-------------|------|-----------------|------------|
-|SRER manned lidar|las / laz| data collected 2011 |
-|SRER sUAS sfm | las / laz | collected fall 2016 |
-| | | | |
-
+|SRER manned lidar|las / laz| data collected 2011 | |
+|SRER Phantom 4 sUAS sfm | jpg photos | fall 2016| |
+|SRER Phantom 4 sUAS sfm | las / laz | fall 2016 | |
+|SRER Phantom 3 sUAS sfm | jpg photos | fall 2016| |
+|SRER Phantom 3 sUAS sfm | las / laz | fall 2016 | |
+|SRER a6000 sUAS sfm | jpg photos | spring 2016| |
+|SRER a6000 sUAS sfm | las / laz | spring 2016 | |
+|SRER a6000 sUAS sfm | jpg photos | summer 2016| | 
+|SRER a6000 sUAS sfm | las / laz | summer 2016 | |
+|SRER Osmo sfm | jpg photos| fall 2016 | |
+|SRER Osmo sfm | las / laz | fall 2016 | | 
+|WGEW manned lidar| las /laz |fall 2015| |
+|WGEW Kendall sUAS sfm| jpg photos | fall 2015| |
+|WGEW Kendall sUAS sfm| las / laz | fall 2015| |
+|WGEW Lucky Hills sUAS sfm| jpg photos | fall 2015| |
+|WGEW Lucky Hills sUAS sfm| las / laz | fall 2015| |
+|WGEW Kendall Reigl lidar | las / laz | fall 2015| |
+|WGEW Lucky Hills Reigl lidar| las / laz | fall 2015| |
 ---
 
 ## Get Started
