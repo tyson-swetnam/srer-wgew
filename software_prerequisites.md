@@ -90,7 +90,8 @@ source .i-commands-auto.bash
 
 # Install R-base and RStudio
 
-Set up CRAN
+Set up [CRAN](https://cran.r-project.org/)
+
 ```
 $ sudo sh -c 'echo "deb http://cran.rstudio.com/bin/linux/ubuntu trusty/" >> /etc/apt/sources.list'
 ```
@@ -109,11 +110,16 @@ $ sudo apt-get update
 
 ### Install R
 
+Version: Monday 2017-03-06, Another Canoe, R-3.3.3
+
 ```
 $ sudo apt-get -y install r-base r-base-dev
 ```
 
 ### Install RStudio
+
+Version:  1.0.136
+Released:  2016-12-21
 
 ```
 $ sudo apt-get install gdebi-core
