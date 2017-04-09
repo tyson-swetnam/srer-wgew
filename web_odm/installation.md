@@ -1,7 +1,7 @@
 # Web OpenDroneMap
 
 We installed [Web OpenDroneMap(ODM)](https://github.com/OpenDroneMap/WebODM) 
-onto a base Ubuntu image on Jetstream.
+onto a [base Ubuntu image w/ Docker CE](https://use.jetstream-cloud.org/application/images/359) on Jetstream.
 
 WebODM can utilize multiple worker nodes for processing, 
 we used large (10 core, 30 GB RAM), xlarge (24 core, 60 GB RAM), 
