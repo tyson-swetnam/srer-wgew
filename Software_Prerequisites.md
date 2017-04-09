@@ -62,3 +62,23 @@ sudo service docker restart
 ```
 You may need to change to `root` and back to `${USER}` before settings take effect.
 
+# Setting up CyVerse Data Store and iRods iCommands 
+
+[Instructions](https://pods.iplantcollaborative.org/wiki/display/DS/Setting+Up+iCommands)
+
+```
+iinit
+```
+You will be queried to set up your `irods_environment.json`
+
+Enter the following:
+
+|statement  |input  |  
+|-----------|-------|
+| DNS | *data.iplantcollaborative.org* |
+|port number|*1247*|
+|user name| *your user name*|
+|zone|*iplant*|
+
+Set up auto-complete for iCommands
+[instructions]()
