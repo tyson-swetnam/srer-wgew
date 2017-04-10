@@ -1,0 +1,14 @@
+# time docker run -v ${PWD}:/data pdal/pdal:1.5 pdal pipeline /data/mad_pipeline.json
+# JSON uses a wildcard * to use all .las files in the folder
+{
+  "pipeline":[
+    "/data/*.las",
+    {
+      "type":"filters.mad",
+      "dimension":"Z",
+      "k":4.0
+    },
+    "/data/tiles_mad.las"
+  ]
+}
+
