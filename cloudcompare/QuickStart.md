@@ -1,6 +1,6 @@
 # Analyses in CloudCompare
 
-We installed [CloudCompare](http://www.cloudcompare.org/) using `snapd`
+I installed [CloudCompare](http://www.cloudcompare.org/) using `snapd`
 on the Jetstream images and on our local machines (for better point cloud 
 editing a high end video card is strongly encouraged).
 
