@@ -31,3 +31,10 @@ docker run -it -v ~/entwine:/entwine \
 Open a new browser window and connect using either:
 
 Speck.ly: http://speck.ly/?s=http://<remotehost>:8080/&r=lidar_output
+
+# Large Entwine runs
+
+```
+sudo docker run -v /vol_b/4fri/phase1:/data connormanning/entwine build -t 44 -i /data/**/* -o ~/entwine/4fri_phase1
+
+```
