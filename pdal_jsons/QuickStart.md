@@ -19,7 +19,7 @@ sudo docker run -it -v ${PWD}:/data pdal/pdal:1.5 pdal translate
 [filters.pmf](https://www.pdal.io/stages/filters.pmf.html)
 
 ```
-sudo docker run -it -v ${PWD}:/data pdal/pdal:1.5 pdal ground -i %1 -o %1_pmf.las -v 4
+sudo docker run -it -v ${PWD}:/data pdal/pdal:1.5 pdal ground -i $f -o $base_pmf.las -v 4
 ```
 
 You can add `-p` and a JSON pipeline to modify the [parameter options](https://www.pdal.io/stages/filters.pmf.html#options)
