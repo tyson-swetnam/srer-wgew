@@ -26,6 +26,60 @@ The sUAS use small GPS units, such as the [ublox](https://www.u-blox.com/en/prod
 |ServiceDrone|||||||
 |eBeeAg|||||||
 
+### Reprojection
+
+I reprojected all of the point clouds to WGS84 (EPSG: 4326)
+
+Riegl scan 1
+
+```
+docker run -v ${PWD}:/data pdal/pdal:1.5 pdal translate \
+/data/p4_082516.las /data/p4_082516_wgs84.las reprojection \
+--filters.reprojection.out_srs="EPSG:4326" \
+--writers.las.scale_x=0.0000001 \
+--writers.las.scale_y=0.0000001 \
+--writers.las.offset_x="auto" \
+--writers.las.offset_y="auto"
+```
+
+Riegl scan 2
+
+```
+docker run -v ${PWD}:/data pdal/pdal:1.5 pdal translate \
+/data/p4_093016.las /data/p4_093016_wgs84.las reprojection \
+--filters.reprojection.out_srs="EPSG:4326" \
+--writers.las.scale_x=0.0000001 \
+--writers.las.scale_y=0.0000001 \
+--writers.las.offset_x="auto" \
+--writers.las.offset_y="auto"
+```
+
+SRER PAG 2011
+
+```
+docker run -v ${PWD}:/data pdal/pdal:1.5 pdal translate \
+/data/pag11/srer_mad.las /data/pag11/srer_mad_wgs84.las reprojection \
+--filters.reprojection.out_srs="EPSG:4326" \
+--writers.las.scale_x=0.0000001 \
+--writers.las.scale_y=0.0000001 \
+--writers.las.offset_x="auto" \
+--writers.las.offset_y="auto"
+```
+
+WGEW 2015
+
+### Outlier Removal
+
+I created PDAL pipelines to remove vertical outliers and to establish height above ground (hag) for each of the point clouds.
+
+PDAL uses .json files for executing pipelines.
+
+[filters.mad](https://www.pdal.io/stages/filters.mad.html)
+
+```
+
+```
+
 # Alignment of point clouds
 
 Point clouds projected in different datums and geoids can have significant misalignment when they are loaded together.
@@ -69,3 +123,16 @@ used targets placed on dGPS and TotalStation surveyed pins.
 In the case of the DJI Phantom 4 black and white targets were placed on the dGPS pins.
 
 [Alignment and Registration](http://www.cloudcompare.org/doc/wiki/index.php?title=Alignment_and_Registration)
+
+### Display in Entwine/Potree/Greyhound
+
+After finishing the analyses I used Entwine to create web browser viewable data.
+
+```
+docker run -it -v ${PWD}:/data -v /media/tyson/2AFE-A957/frontiers/data:/out connormanning/entwine build -i /data/plot4_all_nadir_shutter_correction.las -o /out/p4
+```
+
+```
+docker run -it -v ~/entwine:/entwine -p 8080:8080 connormanning/greyhound
+```
+
