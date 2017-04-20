@@ -1,4 +1,4 @@
-# Justification
+# Input Point Clouds
 
 In both the WGEW and SRER sites the terrestrial laser scanner 
 was set up using bench marked locations from RTK-GPS.
@@ -9,12 +9,21 @@ from USGS benchmarks.
 
 The TLS models were georeferenced in [Riegl RiScan software](http://www.riegl.com/products/software-packages/)
 
-|Location|RMSE|control points|
-|--------|----|--------------|
-|Lucky Hills|||
-|Kendall Grassland|||
-|Santa Rita Savannah|||
-|Santa Rita Woodland|||
+|Location|Date|RMSE [cm]|GCP|GCP RMSE [cm}|
+|--------|----|---------|---|-------------|
+|Lucky Hills|?|?|TotalStation| |
+|Kendall Grassland|10/9/2015|?|TotalStation| |
+|Santa Rita Woodland|8/25/2016|?|dGPS| |
+|Santa Rita Woodland|9/30/2016|?|dGPS| |
+
+SRER sUAS models were georeferenced based on the GCPs established with the [Leica dGPS]()
+
+|Location|Date|RMSE [cm]|GCP|GCP RMSE [cm]|
+|--------|----|---------|---|-------------|
+|Lucky Hills|10/8/2015|XXX|None| |
+|Kendall Grassland|10/8/2015|XXX|None| | 
+|Santa Rita Woodland|8/17/2016|XXX cm|dGPS| |
+|Santa Rita Woodland|9/28/2016|XXX cm|dGPS| |
 
 The sUAS use small GPS units, such as the [ublox](https://www.u-blox.com/en/product/neo-m8-series) and [DJI Phantom4](https://www.dji.com/phantom-4/info)
 
