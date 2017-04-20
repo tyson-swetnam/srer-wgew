@@ -7,6 +7,7 @@ In Kendall Grassland and Lucky Hill Shrubland the TLS targest
 were placed on total station pins which were established 
 from USGS benchmarks.
 
+### Terrestrial laser scanning
 The TLS models were georeferenced in [Riegl RiScan software](http://www.riegl.com/products/software-packages/)
 
 |Location|Date|RMSE [cm]|GCP|GCP RMSE [cm}|
@@ -15,6 +16,8 @@ The TLS models were georeferenced in [Riegl RiScan software](http://www.riegl.co
 |Kendall Grassland|10/9/2015|?|TotalStation| |
 |Santa Rita Woodland|8/25/2016|?|dGPS| |
 |Santa Rita Woodland|9/30/2016|?|dGPS| |
+
+### sUAS sfm 
 
 SRER sUAS models were georeferenced based on the GCPs established with the [Leica dGPS]()
 
@@ -34,6 +37,36 @@ The sUAS use small GPS units, such as the [ublox](https://www.u-blox.com/en/prod
 |DJI Phantom3||GPS/GLONASS|±0.5 m |±1.5 m|±0.1 m|±0.3 m|
 |ServiceDrone|||||||
 |eBeeAg|||||||
+
+### Point Clouds
+
+|Dataset|Projection|ESPG|Point Density (ppsm)|Link|
+|-------|----------|----|--------------------|----|
+|WGEW 2015|UTM|26912|8 - 12||
+|SRER 2011|AZ State Plane Central| |8 - 13 ||
+|Velodyne 32|UTM||||
+|Reigl TLS|UTM|||
+
+|Dataset|Projection|ESPG|Point Density (ppsm)|Link|
+|-------|----------|----|--------------------|----|
+|a6000|WGS84||1000+||
+|DJI Phantom 4|WGS84||12,000 - 45,000||
+|DJI Osmo|WGS84|||
+
+
+|eBee MultiSPEC |UTM| | ||
+
+### Ground Control
+
+|Dataset|Type|RMSE|
+|-------|----|----|
+|Lucky Hills|Total Station||
+|Kendall Grassland|Total Station||
+
+|Dataset|Type|RMSE|
+|-------|----|----|
+|Santa Rita Woodland|dGPS||
+
 
 ### Reprojection
 
@@ -92,34 +125,6 @@ PDAL uses .json files for executing pipelines.
 # Alignment of point clouds
 
 Point clouds projected in different datums and geoids can have significant misalignment when they are loaded together.
-
-### Point Clouds
-
-|Dataset|Projection|ESPG|Point Density (ppsm)|Link|
-|-------|----------|----|--------------------|----|
-|Woolpert aerial|UTM||8 - 12||
-|eBee MultiSPEC |UTM| | ||
-|Velodyne 32|UTM||||
-|Reigl TLS|UTM|||
-
-|Dataset|Projection|ESPG|Point Density (ppsm)|Link|
-|-------|----------|----|--------------------|----|
-|SRER aerial|AZ State Plane Central| |8 - 13 ||
-|a6000|WGS84||1000+||
-|DJI Phantom 4|WGS84||12,000 - 45,000||
-|DJI Osmo|WGS84|||
-|Reigl TLS|UTM|||
-
-### Ground Control
-
-|Dataset|Type|RMSE|
-|-------|----|----|
-|Lucky Hills|Total Station||
-|Kendall Grassland|Total Station||
-
-|Dataset|Type|RMSE|
-|-------|----|----|
-|Santa Rita Woodland|dGPS||
 
 ## Alignment in CloudCompare
 
