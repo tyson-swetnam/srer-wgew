@@ -1,50 +1,50 @@
 # Input Point Clouds
 
-In both the WGEW and SRER sites the terrestrial laser scanner 
-was set up using bench marked locations from RTK-GPS.
+At both the WGEW and SRER sites the Riegl terrestrial laser scanner 
+was set up using reflective targets placed atop ground control 
+rebar pins whose locations were established from either TotalStation 
+survey or RTK-GPS.
 
-In Kendall Grassland and Lucky Hill Shrubland the TLS targest 
-were placed on total station pins which were established 
-from USGS benchmarks.
+In Kendall Grassland and Lucky Hill Shrubland reflective laser targets 
+were placed on five rebar stakes whose locations were established 
+from USGS benchmarks and back azimuth measured from a TotalStation.
+
+At the SRER woodland site ground control pins were placed throughout
+the survey area (13 rebar stakes) and located using RTK GPS.
 
 ### Terrestrial laser scanning
 The TLS models were georeferenced in [Riegl RiScan software](http://www.riegl.com/products/software-packages/)
 
-|Location|Date|RMSE [cm]|GCP|GCP RMSE [cm}|
-|--------|----|---------|---|-------------|
-|Lucky Hills|?|?|TotalStation| |
-|Kendall Grassland|10/9/2015|?|TotalStation| |
-|Santa Rita Woodland|8/25/2016|?|dGPS| |
-|Santa Rita Woodland|9/30/2016|?|dGPS| |
+|Location|Date|Projection|ESPG|RMSE_z [cm]|RMSE_h [cm]|GCP|GCP RMSE [cm]|PPSM (p/m^2)|
+|--------|----|----------|----|-----------|-----------|---|-------------|------------|
+|Lucky Hills|?|WGS84 UTM Zone 12N|26912|1cm|2cm|TotalStation|??|
+|Kendall Grassland|10/9/2015|WGS84 UTM Zone 12N|26912|1cm|2cm|TotalStation|??|
+|Santa Rita Woodland|8/25/2016|WGS84 UTM Zone 12N|26912|1cm|2cm|dGPS|??|
+|Santa Rita Woodland|9/30/2016|WGS84 UTM Zone 12N|26912|1cm|2cm|dGPS|??|
 
 ### sUAS sfm 
 
 SRER sUAS models were georeferenced based on the GCPs established with the [Leica dGPS]()
 
-|Location|Date|RMSE [cm]|GCP|GCP RMSE [cm]|
-|--------|----|---------|---|-------------|
-|Lucky Hills|10/8/2015|XXX|None| |
-|Kendall Grassland|10/8/2015|XXX|None| | 
-|Santa Rita Woodland|8/17/2016|XXX cm|dGPS| |
-|Santa Rita Woodland|9/28/2016|XXX cm|dGPS| |
+|sUAS|Location|Date|Projection|ESPG|RMSE_z [cm]|RMSE_h [cm]|GCP|GCP RMSE [cm]|PPSM (p/m^2)|
+|----|--------|----|----------|----|-----------|-----------|---|-------------|------------|
+|Sensefly eBee Ag|Lucky Hills|10/8/2015|WGS84 UTM Zone 12N|26912|25cm?|50cm?|None| |
+|Sensefly eBee Ag|Kendall Grassland|10/8/2015|WGS84 UTM Zone 12N|26912|25cm?|50cm?|None| | 
+|DJI Phantom4|Santa Rita Woodland|8/17/2016|WGS84 UTM Zone 12N|26912|??|??|dGPS| |
+|DJI Phantom4|Santa Rita Woodland|9/28/2016|WGS84 UTM Zone 12N|26912|??|??|dGPS| |
+|BirdseyeView Firefly6|Santa Rita Woodland|3/17/2016|?|||||||
+|BirdsEyeView Firefly6|Santa Rita Woodland|6/28/2016|
 
-### lidar
 
-|Dataset|Projection|ESPG|Point Density (ppsm)|Link|
-|-------|----------|----|--------------------|----|
-|WGEW 2015|UTM|26912|8 - 12||
-|SRER 2011|AZ State Plane Central| |8 - 13 ||
+
+### Aerial Lidar
+
+|Location|Date|Projection|ESPG|RMSE_z [cm]|RMSE_h [cm]|GCP|GCP RMSE [cm]|PPSM (p/m^2)|
+|--------|----|----------|----|-----------|-----------|---|-------------|------------|
+|WGEW|9/16-18/2015|WGS84 UTM Zone 12N|26912|9.6|100|8 - 12||
+|SRER 2011|NAD83 State Plane HARN Arizona Central, NAVD88|2223|\pm 6.4|100|8 - 13 ||
 |Velodyne 32|UTM||||
 |Reigl TLS|UTM|||
-
-|Dataset|Projection|ESPG|Point Density (ppsm)|Link|
-|-------|----------|----|--------------------|----|
-|a6000|WGS84||1000+||
-|DJI Phantom 4|WGS84||12,000 - 45,000||
-|DJI Osmo|WGS84|||
-
-
-|eBee MultiSPEC |UTM| | ||
 
 ### Ground Control
 
@@ -66,37 +66,13 @@ The sUAS use small GPS units, such as the [ublox](https://www.u-blox.com/en/prod
 |Firefly6| [ublox NEO-M8N](https://www.u-blox.com/sites/default/files/NEO-M8_DataSheet_(UBX-13003366).pdf)| GPS/GLONASS| ±3.0 m | ±2.0 m |NA|NA|
 |DJI Phantom4||GPS/GLONASS|±0.5 m |±1.5 m|±0.1 m|±0.3 m|
 |DJI Phantom3||GPS/GLONASS|±0.5 m |±1.5 m|±0.1 m|±0.3 m|
-|ServiceDrone|||||||
-|eBeeAg|||||||
+|ServiceDrone||GPS/GLONASS|||||
+|eBeeAg|?|?|||||
 
 
 ### Reprojection
 
-I reprojected all of the point clouds to WGS84 (EPSG: 4326)
-
-Riegl scan 1
-
-```
-docker run -v ${PWD}:/data pdal/pdal:1.5 pdal translate \
-/data/p4_082516.las /data/p4_082516_wgs84.las reprojection \
---filters.reprojection.out_srs="EPSG:4326" \
---writers.las.scale_x=0.0000001 \
---writers.las.scale_y=0.0000001 \
---writers.las.offset_x="auto" \
---writers.las.offset_y="auto"
-```
-
-Riegl scan 2
-
-```
-docker run -v ${PWD}:/data pdal/pdal:1.5 pdal translate \
-/data/p4_093016.las /data/p4_093016_wgs84.las reprojection \
---filters.reprojection.out_srs="EPSG:4326" \
---writers.las.scale_x=0.0000001 \
---writers.las.scale_y=0.0000001 \
---writers.las.offset_x="auto" \
---writers.las.offset_y="auto"
-```
+I reprojected all of the point clouds to WGS84 Web Mercator (EPSG: 3857)
 
 SRER PAG 2011
 
@@ -145,7 +121,7 @@ In the case of the DJI Phantom 4 black and white targets were placed on the dGPS
 After finishing the analyses I used Entwine to create web browser viewable data.
 
 ```
-docker run -it -v ${PWD}:/data -v /media/tyson/2AFE-A957/frontiers/data:/out connormanning/entwine build -i /data/plot4_all_nadir_shutter_correction.las -o /out/p4
+docker run -it -v ${PWD}:/data connormanning/entwine build -i /data/plot4_all_nadir_shutter_correction.las -o ~/entwine/plot4_all_nadir
 ```
 
 ```
