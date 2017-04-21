@@ -10,7 +10,7 @@ were placed on five rebar stakes whose locations were established
 from USGS benchmarks and back azimuth measured from a TotalStation.
 
 At the SRER woodland site ground control pins were placed throughout
-the survey area (13 rebar stakes) and located using RTK GPS.
+the survey area (13 rebar stakes) and located using RTK-GPS.
 
 ### Terrestrial laser scanning
 The TLS models were georeferenced in [Riegl RiScan software](http://www.riegl.com/products/software-packages/)
@@ -42,9 +42,10 @@ SRER sUAS models were georeferenced based on the GCPs established with the [Leic
 |Location|Date|Projection|ESPG|RMSE_z [cm]|RMSE_h [cm]|GCP|GCP RMSE [cm]|PPSM (p/m^2)|
 |--------|----|----------|----|-----------|-----------|---|-------------|------------|
 |WGEW|9/16-18/2015|WGS84 UTM Zone 12N|26912|9.6|100|8 - 12||
-|SRER 2011|NAD83 State Plane HARN Arizona Central, NAVD88|2223|\pm 6.4|100|8 - 13 ||
-|Velodyne 32|UTM||||
-|Reigl TLS|UTM|||
+|SRER|4/10/2011|NAD83 State Plane HARN Arizona Central, NAVD88|2223|\pm 6.4|100|8 - 13 ||
+|Lucky Hills Velodyne 32|10/8/2015|WGS84 UTM Zone 12N|26912|||35|NA|?|?|
+|Kendall Grassland Velodyne 32|10/8/2015|WGS84 UTM Zone 12N|26912|||35|NA|?|?|
+
 
 ### Ground Control
 
