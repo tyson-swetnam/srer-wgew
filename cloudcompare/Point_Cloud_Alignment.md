@@ -12,15 +12,14 @@ from USGS benchmarks and back azimuth measured from a TotalStation.
 At the SRER woodland site ground control pins were placed throughout
 the survey area (13 rebar stakes) and located using RTK-GPS.
 
-### Terrestrial laser scanning
-The TLS models were georeferenced in [Riegl RiScan software](http://www.riegl.com/products/software-packages/)
+### Aerial Lidar
 
 |Location|Date|Projection|ESPG|RMSE_z [cm]|RMSE_h [cm]|GCP|GCP RMSE [cm]|PPSM (p/m^2)|
 |--------|----|----------|----|-----------|-----------|---|-------------|------------|
-|Lucky Hills|?|WGS84 UTM Zone 12N|26912|1cm|2cm|TotalStation|??|
-|Kendall Grassland|10/9/2015|WGS84 UTM Zone 12N|26912|1cm|2cm|TotalStation|??|
-|Santa Rita Woodland|8/25/2016|WGS84 UTM Zone 12N|26912|1cm|2cm|dGPS|??|
-|Santa Rita Woodland|9/30/2016|WGS84 UTM Zone 12N|26912|1cm|2cm|dGPS|??|
+|WGEW|9/16-18/2015|WGS84 UTM Zone 12N|26912|9.6|100|8 - 12||
+|SRER|4/10/2011|NAD83 State Plane HARN Arizona Central, NAVD88|2223|\pm 6.4|100|8 - 13 ||
+|Lucky Hills Velodyne 32|10/8/2015|WGS84 UTM Zone 12N|26912|||35|NA|?|?|
+|Kendall Grassland Velodyne 32|10/8/2015|WGS84 UTM Zone 12N|26912|||35|NA|?|?|
 
 ### sUAS sfm 
 
@@ -35,17 +34,25 @@ SRER sUAS models were georeferenced based on the GCPs established with the [Leic
 |BirdseyeView Firefly6|Santa Rita Woodland|3/17/2016|?|||||||
 |BirdsEyeView Firefly6|Santa Rita Woodland|6/28/2016|
 
-
-
-### Aerial Lidar
+### Terrestrial laser scanning
+The TLS models were georeferenced in [Riegl RiScan software](http://www.riegl.com/products/software-packages/)
 
 |Location|Date|Projection|ESPG|RMSE_z [cm]|RMSE_h [cm]|GCP|GCP RMSE [cm]|PPSM (p/m^2)|
 |--------|----|----------|----|-----------|-----------|---|-------------|------------|
-|WGEW|9/16-18/2015|WGS84 UTM Zone 12N|26912|9.6|100|8 - 12||
-|SRER|4/10/2011|NAD83 State Plane HARN Arizona Central, NAVD88|2223|\pm 6.4|100|8 - 13 ||
-|Lucky Hills Velodyne 32|10/8/2015|WGS84 UTM Zone 12N|26912|||35|NA|?|?|
-|Kendall Grassland Velodyne 32|10/8/2015|WGS84 UTM Zone 12N|26912|||35|NA|?|?|
+|Lucky Hills|?|WGS84 UTM Zone 12N|26912|1cm|2cm|TotalStation|??|
+|Kendall Grassland|10/9/2015|WGS84 UTM Zone 12N|26912|1cm|2cm|TotalStation|??|
+|Santa Rita Woodland|8/25/2016|WGS84 UTM Zone 12N|26912|1cm|2cm|dGPS|??|
+|Santa Rita Woodland|9/30/2016|WGS84 UTM Zone 12N|26912|1cm|2cm|dGPS|??|
 
+### Terrestrial sfm
+|Location|Camera|Date|Projection|ESPG|RMSE_z [cm]|RMSE_h [cm]|GCP|GCP RMSE [cm]|PPSM (p/m^2)|
+|--------|------|----|----------|----|-----------|-----------|---|-------------|------------|
+|SRER Opuntia|a6000|
+|SRER Mesquite|a6000|
+|SRER Mesquite|Osmo|
+|SRER Grasses|a6000|
+|SRER plot 4|DJI Osmo||
+|SRER plot x|DJI Osmo||
 
 ### Ground Control
 
