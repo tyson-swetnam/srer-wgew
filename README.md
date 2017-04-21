@@ -10,7 +10,7 @@ This repository contains the core scripts and code used in [Swetnam et al. (2018
 
 These scripts were run on [Jetstream](https://jetstream-cloud.org/) cloud virtual machines with  [base](https://use.jetstream-cloud.org/application/images/54) and [custom](https://use.jetstream-cloud.org/application/images/330) images for Docker, GRASS and GDAL GIS, R and RStudio images.
 
-Many of the softwares in this study are built in [Docker](https://www.docker.com/) containers. I installed Docker CE on the base Jetstream images and pulled the latest containers
+Many of the softwares in this study are built in [Docker](https://www.docker.com/) containers. I installed [Docker CE on the base Ubuntu Dev](https://use.jetstream-cloud.org/application/images/359) Jetstream image. New instances can be launched from this image and `docker pull` the containers for analyses.
 
 ### Docker Containers List
 
