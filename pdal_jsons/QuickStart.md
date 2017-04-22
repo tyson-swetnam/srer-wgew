@@ -4,12 +4,29 @@
 sudo docker pull pdal/pdal:1.5
 ```
 
-# Running a batch without using pipeline
+# Running a batch with `pipeline`
 
 I had a problem passing wildcards into the JSONs used by PDAL pipeline for file names within a directory
 
 ```
-sudo docker run -it -v ${PWD}:/data pdal/pdal:1.5 pdal translate 
+sudo docker run -it -v ${PWD}:/data -v ${HOME}:/home pdal/pdal:1.5 pdal pipeline /home/lidar/jsons/pmf.json
+```
+
+pipeline pmf.json
+
+```
+{
+  "pipeline":[
+    "/data/{}.laz",
+    {
+      "type":"filters.pmf"
+    },
+    {
+      "type":"writers.las",
+      "filename":"/home/lidar/pmf/{}-pmf-ground.laz"
+    }
+  ]
+}
 ```
 
 # Identifying ground using the progressive morphological filters
