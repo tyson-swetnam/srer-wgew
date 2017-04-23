@@ -9,6 +9,13 @@ sudo docker pull pdal/pdal:1.5
 I had a problem passing wildcards into the JSONs used by PDAL pipeline for file names within a directory
 
 ```
+#!/bin/bash
+
+# Loops through a directory
+# Here I'm reserving a single core 23/24 on a Jetstream XL instance
+
+ls *.laz | cut -d. -f1 | xargs -P23 -I{} \
+
 sudo docker run -it -v ${PWD}:/data -v ${HOME}:/home pdal/pdal:1.5 pdal pipeline /home/lidar/jsons/pmf.json
 ```
 
