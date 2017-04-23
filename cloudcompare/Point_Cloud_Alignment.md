@@ -70,9 +70,11 @@ The TLS models were georeferenced in [Riegl RiScan software](http://www.riegl.co
 |-------|----|----|
 |Santa Rita Woodland|dGPS||
 
-### GPS
+### GPS and IMU integrations
 
-The sUAS use small GPS units, such as the [ublox](https://www.u-blox.com/en/product/neo-m8-series) and standard [DJI](https://www.dji.com/phantom-4/info)
+Lidar from moving platofmrs requires an integrated GNSS/IMU (Global Navigation Satellite System/Inertial Motion Unit). GNSS(GPS) and IMU provide the position, rotation, and motion of the scanning platform. Depending on the system used there are variable quantities of uncertainty (error) associated with the measurement location. 
+
+The sUAS use small relatively cheap GNSS units, such as the [ublox](https://www.u-blox.com/en/product/neo-m8-series) and standard [DJI](https://www.dji.com/phantom-4/info)
 
 |sUAS|GPS|Satellite systems| (GPS) Vertical uncertainty | (GPS) Horizontal uncertainty | (Vision) Vertical uncertainty | (Vision) Horizontal uncertainty | 
 |----|---------|-----------------|--------------------------|----------------------------|-----------------------------|-------------------------------|
