@@ -12,14 +12,19 @@ from USGS benchmarks and back azimuth measured from a TotalStation.
 At the SRER woodland site ground control pins were placed throughout
 the survey area (13 rebar stakes) and located using RTK-GPS.
 
+The terrestrial sfm from the Sony a6000 and DJI Osmo did not use GPS. 
+Their locations were referenced from the GCPs visible in the processed 
+clouds or features referenced in other point clouds (TLS, sUAS), 
+typically only one to two GCPs were visible per terrestrial sfm cloud.
+
 ### Aerial Lidar
 
 |Location|Date|Projection|ESPG|RMSE_z [cm]|RMSE_h [cm]|GCP|GCP RMSE [cm]|PPSM (p/m^2)|
 |--------|----|----------|----|-----------|-----------|---|-------------|------------|
-|WGEW|9/16-18/2015|WGS84 UTM Zone 12N|26912|9.6|100|8 - 12||
-|SRER|4/10/2011|NAD83 State Plane HARN Arizona Central, NAVD88|2223|\pm 6.4|100|8 - 13 ||
-|Lucky Hills Velodyne 32|10/8/2015|WGS84 UTM Zone 12N|26912|||35|NA|?|?|
-|Kendall Grassland Velodyne 32|10/8/2015|WGS84 UTM Zone 12N|26912|||35|NA|?|?|
+|WGEW|9/16-18/2015|WGS84 UTM Zone 12N|26912|&plusmn;9.6|&plusmn;100|8 - 12||
+|SRER|4/10/2011|NAD83 State Plane HARN Arizona Central, NAVD88|2223|&plusmn; 6.4|&plusmn;100|8 - 13 ||
+|Lucky Hills Velodyne 32|10/8/2015|WGS84 UTM Zone 12N|26912|&plusmn;|&plusmn;|NA|?|?|
+|Kendall Grassland Velodyne 32|10/8/2015|WGS84 UTM Zone 12N|26912|||&plusmn;|NA|?|?|
 
 ### sUAS sfm 
 
@@ -27,10 +32,10 @@ SRER sUAS models were georeferenced based on the GCPs established with the [Leic
 
 |sUAS|Location|Date|Projection|ESPG|RMSE_z [cm]|RMSE_h [cm]|GCP|GCP RMSE [cm]|PPSM (p/m^2)|
 |----|--------|----|----------|----|-----------|-----------|---|-------------|------------|
-|Sensefly eBee Ag|Lucky Hills|10/8/2015|WGS84 UTM Zone 12N|26912|25cm?|50cm?|None| |
-|Sensefly eBee Ag|Kendall Grassland|10/8/2015|WGS84 UTM Zone 12N|26912|25cm?|50cm?|None| | 
-|DJI Phantom4|Santa Rita Woodland|8/17/2016|WGS84 UTM Zone 12N|26912|??|??|dGPS| |
-|DJI Phantom4|Santa Rita Woodland|9/28/2016|WGS84 UTM Zone 12N|26912|??|??|dGPS| |
+|Sensefly eBee Ag|Lucky Hills|10/8/2015|WGS84 UTM Zone 12N|26912|&plusmn;25cm?|&plusmn;50cm?|None| |
+|Sensefly eBee Ag|Kendall Grassland|10/8/2015|WGS84 UTM Zone 12N|26912|&plusmn;25cm?|&plusmn;50cm?|None| | 
+|DJI Phantom4|Santa Rita Woodland|8/17/2016|WGS84 UTM Zone 12N|26912|&plusmn;??|&plusmn;??|dGPS| |
+|DJI Phantom4|Santa Rita Woodland|9/28/2016|WGS84 UTM Zone 12N|26912|&plusmn;??|&plusmn;??|dGPS| |
 |BirdseyeView Firefly6|Santa Rita Woodland|3/17/2016|?|||||||
 |BirdsEyeView Firefly6|Santa Rita Woodland|6/28/2016|
 
@@ -39,10 +44,10 @@ The TLS models were georeferenced in [Riegl RiScan software](http://www.riegl.co
 
 |Location|Date|Projection|ESPG|RMSE_z [cm]|RMSE_h [cm]|GCP|GCP RMSE [cm]|PPSM (p/m^2)|
 |--------|----|----------|----|-----------|-----------|---|-------------|------------|
-|Lucky Hills|?|WGS84 UTM Zone 12N|26912|1cm|2cm|TotalStation|??|
-|Kendall Grassland|10/9/2015|WGS84 UTM Zone 12N|26912|1cm|2cm|TotalStation|??|
-|Santa Rita Woodland|8/25/2016|WGS84 UTM Zone 12N|26912|1cm|2cm|dGPS|??|
-|Santa Rita Woodland|9/30/2016|WGS84 UTM Zone 12N|26912|1cm|2cm|dGPS|??|
+|Lucky Hills|?|WGS84 UTM Zone 12N|26912|&plusmn;1|&plusmn;2|TotalStation|??|
+|Kendall Grassland|10/9/2015|WGS84 UTM Zone 12N|26912|&plusmn;1|&plusmn;2|TotalStation|??|
+|Santa Rita Woodland|8/25/2016|WGS84 UTM Zone 12N|26912|&plusmn;1|&plusmn;2|dGPS|??|
+|Santa Rita Woodland|9/30/2016|WGS84 UTM Zone 12N|26912|&plusmn;1|&plusmn;2|dGPS|??|
 
 ### Terrestrial sfm
 |Location|Camera|Date|Projection|ESPG|RMSE_z [cm]|RMSE_h [cm]|GCP|GCP RMSE [cm]|PPSM (p/m^2)|
@@ -72,8 +77,8 @@ The sUAS use small GPS units, such as the [ublox](https://www.u-blox.com/en/prod
 |sUAS|GPS|Satellite systems| (GPS) Vertical uncertainty | (GPS) Horizontal uncertainty | (Vision) Vertical uncertainty | (Vision) Horizontal uncertainty | 
 |----|---------|-----------------|--------------------------|----------------------------|-----------------------------|-------------------------------|
 |Firefly6| [ublox NEO-M8N](https://www.u-blox.com/sites/default/files/NEO-M8_DataSheet_(UBX-13003366).pdf)| GPS/GLONASS| ±3.0 m | ±2.0 m |NA|NA|
-|DJI Phantom4||GPS/GLONASS|±0.5 m |±1.5 m|±0.1 m|±0.3 m|
-|DJI Phantom3||GPS/GLONASS|±0.5 m |±1.5 m|±0.1 m|±0.3 m|
+|DJI Phantom4||GPS/GLONASS|&plusmn;0.5 m |&plusmn;1.5 m|&plusmn;0.1 m|&plusmn;0.3 m|
+|DJI Phantom3||GPS/GLONASS|&plusmn;0.5 m |&plusmn;1.5 m|&plusmn;0.1 m|&plusmn;0.3 m|
 |ServiceDrone||GPS/GLONASS|||||
 |eBeeAg|?|?|||||
 
