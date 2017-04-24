@@ -18,11 +18,11 @@ required due to RAM limitations within Agisoft.
 ## Digital Camera Specifications
 |Camera|Sony a6000|DJI Phantom3|DJI Phantom4|DJI Osmo x3|DJI Osmo x5|
 |------|----------|------------|------------|-----------|-----------| 
-|Sensor size| | | | | | 
-|Pixels|| | | | | 
-|Resolution|| | | | | 
+|Sensor size|Exmor® APS-C type (23.5 x 15.6 mm)|Sony EXMOR 1/2.3" CMOS|Sony EXMOR 1/2.3" CMOS|Sony EXMOR 1/2.3" CMOS|4/3-inch CMOS sensor| 
+|Effective Sensor Resolution (megapixel)|24.3|12|
+|Resolution|6000x4000|4000x3000|4000x3000|4000x3000| | 
 |HD Video|| | | | | 
-|FOV|| | | | | 
+|FOV||90°|94°|94°|72°| 
 
 *Note: FOV = Field of View* 
 
