@@ -39,7 +39,7 @@ Exposure compensation|| | | | |
 
 ## Agisoft Settings
 |Parameter|Setting|Value|
-|---------|-------|Value|
+|---------|-------|-----|
 |Camera Calibration| | |
 |Rolling Shutter Correction||on|
 |Align Photos|Accuracy|High|
