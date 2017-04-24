@@ -59,3 +59,8 @@ Test your installation
 ```
 drive ls
 ```
+# Pull data from your Google.drive account onto the VM
+
+```
+drive pull your/google/drive/folders/here
+```
