@@ -16,21 +16,22 @@ required due to RAM limitations within Agisoft.
 
 
 ## Digital Camera Specifications
-|Camera|Sony a6000|DJI Phantom3|DJI Phantom4|DJI Osmo x3|DJI Osmo x5|
+|Camera|Sony a6000 w/ Zeiss Sonar *{*T} 35mm|DJI Phantom3|DJI Phantom4|DJI Osmo x3|DJI Osmo x5|
 |------|----------|------------|------------|-----------|-----------| 
-|Sensor size|Exmor® APS-C type (23.5 x 15.6 mm)|Sony EXMOR 1/2.3" CMOS|Sony EXMOR 1/2.3" CMOS|Sony EXMOR 1/2.3" CMOS|4/3-inch CMOS sensor| 
-|Effective Sensor Resolution (megapixel)|24.3|12|
-|Resolution|6000x4000|4000x3000|4000x3000|4000x3000| | 
-|HD Video|| | | | | 
-|FOV||90°|94°|94°|72°| 
+|Sensor (size)|Sony EXMOR APS-C (23.5 x 15.6 mm)|Sony EXMOR 1/2.3"|Sony EXMOR 1/2.3"|Sony EXMOR 1/2.3"|Panasonic Micro 4/3"| 
+|Effective Sensor Resolution (megapixel)|24.3|12|16|
+|Resolution|6000x4000|4000x3000|4000x3000|4000x3000|4608x3456| 
+|HD Video|1080p|4k|4k|4k|4k| 
+|FOV|62°|90°|94°|94°|72°| 
 
 *Note: FOV = Field of View* 
 
 ## Camera Settings
 |Camera|Sony a6000|DJI Phantom3|DJI Phantom4|DJI Osmo x3|DJI Osmo x5|
 |------|----------|------------|------------|-----------|-----------| 
-|Format| | | | | | 
-|ISO|| | | | | 
+|Format|JPG & RAW|JPG|JPG|JPG|JPG| 
+|ISO|100-1600|100-1600|100-1600|100-1600|100-1600|
+|Focus|-∞|∞|∞|∞|∞|
 |White Balance|| | | | | 
 |Exposure Metering|| | | | | 
 Exposure compensation|| | | | | 
