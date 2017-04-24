@@ -3,6 +3,21 @@
 We used Agisoft Photoscan v1.3 ([Agisoft 2016](http://www.agisoft.com/)) to process our aerial
 imagery into 3D point clouds and 2D orthomosaics.
 
+## Agisoft Settings
+|Parameter|Setting|Value|
+|---------|-------|-----|
+|Camera Calibration| | |
+|Rolling Shutter Correction||on|
+|Align Photos|Accuracy|High|
+|Align Photos|Pair preselect| |
+|Align Photos|Key Points|default|
+|Align Photos|Tie Points|default|
+|Build Dense|Quality|Ultra High & High|
+|Build Dense|Depth filter|Mild|
+|Build Mesh|Surface Type|Height|
+|Build Mesh|Face Count||
+|Build Mesh|Interpolation| |
+
 # Hardware
 
 We used an Intel dual core XEON E5 v3 2630 Supermicro workstation with 256GB RAM and 
@@ -51,19 +66,4 @@ The Sony a6000 was flown on the BirdsEyeView Firefly6, the Osmo was carried by h
 |Forward speed(*m/s*)|15-18|4|4|1|1|
 |Photo Interval (*s*)|1||||||
 |Estimated pixel size (*mm*)|10|11|11|<1|<1|
-
-## Agisoft Settings
-|Parameter|Setting|Value|
-|---------|-------|-----|
-|Camera Calibration| | |
-|Rolling Shutter Correction||on|
-|Align Photos|Accuracy|High|
-|Align Photos|Pair preselect| |
-|Align Photos|Key Points|default|
-|Align Photos|Tie Points|default|
-|Build Dense|Quality|Ultra High & High|
-|Build Dense|Depth filter|Mild|
-|Build Mesh|Surface Type|Height|
-|Build Mesh|Face Count||
-Build Mesh|Interpolation| |
 
