@@ -55,7 +55,7 @@ Set Options
 |pmvs-threshold|default|success if > threshold|
 |texturing-outlier-removal-type|default|type of outlier removal tool|
 |texturing-skip-hole-filling|default|fills holes in mesh|
-|orthophoto-resolution|defalt|pixels/meter|
+|orthophoto-resolution|default|pixels/meter|
 |force-ccd|default|overide ccd width|
 |orthophooto-no-tiled|default|stripe GeoTIFF|
 |mesh-size|default|number of vertexes in mesh|
