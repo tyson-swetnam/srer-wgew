@@ -1,8 +1,18 @@
-# Moving image files off Google.Drive to a Jetstream VM
+# Getting image files from your Google.Drive to a Jetstream VM
 
-The University of Arizona has an unlimited Google.drive storage service.
+In the US, academic institutions increasingly have set up user email accounts through Google.
+Some of these accounts have unlimited Google.drive storage as a service for faculty and students.
 
-This works well for uploading sUAS imagery - both from the field and from PC
+One of the issues with uploading or downloading a large number of images to a Google.Drive 
+account through a GUI (i.e. Google's Chrome Web Browser) is the limit to the number of files, 
+the speed of the uploads, and the size of the downloads. Typically a download directly from a 
+Google.Drive account through Chrome is limited to <2Gb and is zipped by Google before starting.
+
+While the browser can work well for uploading a large number sUAS imagery - both from the field and from PC,
+downloading a large quantity of images as .zip files from the Google.drive can be tiresome and difficult.
+
+To get around thes problems we can use 3rd party applications like `drive` a command line client 
+written in Google's `go` language.
 
 ## Install Go language
 
