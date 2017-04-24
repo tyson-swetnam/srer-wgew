@@ -3,9 +3,9 @@
 We installed [Web OpenDroneMap(ODM)](https://github.com/OpenDroneMap/WebODM) 
 onto a [base Ubuntu image w/ Docker CE](https://use.jetstream-cloud.org/application/images/359) on Jetstream.
 
-WebODM can utilize multiple worker nodes for processing, 
-we used large (10 core, 30 GB RAM), xlarge (24 core, 60 GB RAM), 
-and xxlarge (44 core, 120 GB RAM) size instances as worker nodes.
+WebODM can utilize additional nodes as workers for multiple project processing. 
+On Jetstream we used large (10 core, 30 GB RAM), xlarge (24 core, 60 GB RAM), 
+and xxlarge (44 core, 120 GB RAM) size instances as our worker nodes.
 
 We followed the standard installation procedures for WebODM through Docker
 
@@ -21,3 +21,28 @@ using the [node-ODM](https://github.com/OpenDroneMap/node-OpenDroneMap)
 ```
 docker run -p 3000:3000 opendronemap/node-opendronemap
 ```
+
+## ODM orthomosaic and point cloud creation settings.
+
+Unlike Agisoft Photoscan, [OpenDroneMap](https://github.com/OpenDroneMap/OpenDroneMap/wiki/Process-Breakdown) uses open-source sfm-mvs.
+
+Pameter settings are exposed in the 
+
+|Parameter|Setting|Value|
+|---------|-------|-----|
+|Image Path| | |
+|Project Path| | |
+|Image Resize| | |
+| | | |
+| | | |
+| | | |
+| | | |
+| | | |
+| | | |
+| | | |
+| | | |
+| | | |
+| | | |
+| | | |
+| | | |
+| | | |
