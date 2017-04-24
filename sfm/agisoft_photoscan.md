@@ -32,25 +32,25 @@ keep the RAM use beneath the available amount.
 |F-stop|||||||
 Exposure||||||||
 |Focal length|35 mm| | | | | |
-|Focus|-∞|∞|∞|∞|∞|
-|White Balance|| | | | | 
-|Exposure Metering|| | | | | 
-Exposure compensation|| | | | | 
-|Sharpness|| | | | | 
-|Antiflicker|| | | | | 
+|Focus|1-∞|∞|∞|∞|∞|
+|White Balance|Sun|Sun|Sun|Sun|Sun| 
+|Exposure Metering|Center|Center|Center|Center|Center| 
+Exposure compensation|0|0|0|0|0| 
+|Sharpness| | | | | | 
+|Antiflicker| | | | | | 
 
 ## Flight / Collection Parameters
 
-amsl = meaters above ground level
-m/s = meters per second (forward air speed)
+*amsl* = meaters above ground level
+*m/s* = meters per second (forward air speed)
 The Sony a6000 was flown on the BirdsEyeView Firefly6, the Osmo was carried by hand on a 1 meter range pole.
 
 |Camera|Sony a6000|DJI Phantom3|DJI Phantom4|DJI Osmo x3|DJI Osmo x5|
 |------|----------|------------|------------|-----------|-----------| 
-|Flight Height (m agl)|100-120|20-30|20-30|1-3|1-3|
-|Forward speed(m/s)|15-18|4|4|1|1|
-|Photo Interval (s)|1||||||
-|Estimated pixel size (mm)|10|11|11|<1|<1|
+|Flight Height (*m agl*)|100-120|20-30|20-30|1-3|1-3|
+|Forward speed(*m/s*)|15-18|4|4|1|1|
+|Photo Interval (*s*)|1||||||
+|Estimated pixel size (*mm*)|10|11|11|<1|<1|
 
 ## Agisoft Settings
 |Parameter|Setting|Value|
