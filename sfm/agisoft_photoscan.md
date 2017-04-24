@@ -31,8 +31,8 @@ keep the RAM use beneath the available amount.
 ## Digital Camera Specifications
 |Camera|Sony a6000 w/ Zeiss Sonar \*T 35mm|DJI Phantom3|DJI Phantom4|DJI Osmo x3|DJI Osmo x5|
 |------|----------|------------|------------|-----------|-----------| 
-|Sensor (size)|Sony EXMOR APS-C (23.5 x 15.6 mm)|Sony EXMOR 1/2.3"|Sony EXMOR 1/2.3"|Sony EXMOR 1/2.3"|Panasonic Micro 4/3"| 
-|Effective Sensor Resolution (megapixel)|24.3|12|16|
+|Sensor (mm)|Sony EXMOR APS-C (23.5x15.6)|Sony EXMOR 1/2.3" (7.87x6.3)|Sony EXMOR 1/2.3" (7.87x6.3)|Sony EXMOR 1/2.3" (7.87x6.3)|Panasonic Micro 4/3" (17.3x13)| 
+|Effective Sensor Resolution (megapixel)|24.3|12|12|12|16|
 |Resolution|6000x4000|4000x3000|4000x3000|4000x3000|4608x3456| 
 |HD Video|1080p|4k|4k|4k|4k| 
 |FOV|62°|90°|94°|94°|72°| 
