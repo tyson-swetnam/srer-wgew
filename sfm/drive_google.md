@@ -1,10 +1,11 @@
-# Getting image files from your Google.Drive to a Jetstream VM
+# Getting image files from your Drive.Google into a Jetstream VM
 
-In the US, academic institutions increasingly have set up user email accounts through Google.
-Some of these accounts have unlimited Google.drive storage as a service for faculty and students.
+In the US, academic institutions have increasingly established email accounts through Google.
+Some institutions have unlimited [Drive](https://drive.google.com) storage 
+as a service for faculty and students, and is the case for our study.
 
-One of the issues with uploading or downloading a large number of images to a Google.Drive 
-account through a GUI (i.e. Google's Chrome Web Browser) is the limit to the number of files, 
+One of the issues with uploading / downloading a large number of images to or from a Google.Drive 
+account through a web browser (i.e. Google's Chrome) is the limit to the number of files, 
 the speed of the uploads, and the size of the downloads. Typically a download directly from a 
 Google.Drive account through Chrome is limited to <2Gb and is zipped by Google before starting.
 
