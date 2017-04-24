@@ -29,7 +29,7 @@ For the largest sfm model creation (>500 images) chunking of individual flights 
 keep the RAM use beneath the available amount. 
 
 ## Digital Camera Specifications
-|Camera|Sony a6000 w/ Zeiss Sonar *{*T} 35mm|DJI Phantom3|DJI Phantom4|DJI Osmo x3|DJI Osmo x5|
+|Camera|Sony a6000 w/ Zeiss Sonar \*T 35mm|DJI Phantom3|DJI Phantom4|DJI Osmo x3|DJI Osmo x5|
 |------|----------|------------|------------|-----------|-----------| 
 |Sensor (size)|Sony EXMOR APS-C (23.5 x 15.6 mm)|Sony EXMOR 1/2.3"|Sony EXMOR 1/2.3"|Sony EXMOR 1/2.3"|Panasonic Micro 4/3"| 
 |Effective Sensor Resolution (megapixel)|24.3|12|16|
