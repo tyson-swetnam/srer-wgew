@@ -19,6 +19,12 @@ written in Google's own `go` language.
 
 Drive uses the `go` language. In order to work with it you need to [install `go`](https://golang.org/doc/install) onto the VM.
 
+Remove any other go packages (particularly gccgo-go)
+
+```
+sudo apt-get -y autoremove gccgo-go
+```
+
 ```
 $ wget https://storage.googleapis.com/golang/go1.8.1.linux-amd64.tar.gz
 ```
@@ -34,6 +40,7 @@ In `~/.bashrc` add:
 export GOPATH=$HOME/go
 export PATH=$GOPATH:$GOPATH/bin:$PATH
 ```
+
 Follow the `go`instructions to [test the installation](https://golang.org/doc/install#testing)
 
 ## Install `drive` a `drive.google` client for commandline
@@ -44,15 +51,16 @@ Add the GOPATH to `.bashrc`
 
 ```
 cat << ! >> ~/.bashrc
-  export GOPATH=\$HOME/gopath
-  export PATH=\$GOPATH:\$GOPATH/bin:\$PATH
-  !
+export GOPATH=\$HOME/gopath
+export PATH=\$GOPATH:\$GOPATH/bin:\$PATH
+!
 source ~/.bashrc # To reload the settings and get the newly set ones # Or open a fresh terminal
 ```
 
 Install `drive` using `go`
 
 ```
+cd ~/go
 go get -u github.com/odeke-em/drive/cmd/drive
 ```
 
