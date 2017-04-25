@@ -2,7 +2,7 @@
 
 In the US, academic institutions have increasingly established email accounts through Google.
 Some institutions have unlimited [Drive](https://drive.google.com) storage 
-as a service for faculty and students, and is the case for our study.
+as a service for faculty and students, as was the case for our study.
 
 One of the issues with uploading / downloading a large number of images to or from a Drive 
 account through the web browser (i.e. Google's Chrome) is the limit to the number of files, 
