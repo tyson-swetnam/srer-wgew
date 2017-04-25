@@ -49,7 +49,7 @@ Set Options
 |mesh-octree-depth|defalut|Oct-tree depth use in mesh reconstruction|
 |min-num-features|default|more features = better results, but slower|
 |force-focal|default|override focal length|
-|resize-to|default|reduced image size, faster|
+|resize-to|**max width**|use the maximum image width, equivalent to 'ultra high' resolution|
 |texturing-keep-unseen-faces|default|keeps faces in mesh not seen|
 |pmvs-level|default|level in image pyramid for computation|
 |pmvs-threshold|default|success if > threshold|
@@ -70,7 +70,7 @@ Set Options
 |orthophoto-target-srs|default|sets EPSG|
 |texutring-tone-mapping|default|turn on gamma tone|
 |pmvs-min-images|default|min # images for reconstruction|
-|opensfm-processes|default|max # processes in dense reconstruction|
+|opensfm-processes|**default**|max # cores for processing dense reconstruction|
 |texturing-skip-global-seam-leveling|default|skip seams, useful for IR|
 |texturing skip-visibility-test|default|skip geometric visiblity|
 |matcher-ratio|default|ratio of distance to next best match|
