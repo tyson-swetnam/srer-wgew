@@ -30,32 +30,37 @@ $ wget https://storage.googleapis.com/golang/go1.8.1.linux-amd64.tar.gz
 ```
 
 ```
-$ tar -C /usr/local -xzf go1.8.1.linux-amd64.tar.gz
+$ sudo tar -C /usr/local -xzf go1.8.1.linux-amd64.tar.gz
 ```
 
 In `/etc/profile` add: `export PATH=$PATH:/usr/local/go/bin`
 
-In `~/.bashrc` add:  
+In `~/.bashrc` - `sudo nano ~/.bashrc`
+
+add to the end of the file:  
 ```
 export GOPATH=$HOME/go
 export PATH=$GOPATH:$GOPATH/bin:$PATH
 ```
 
-Follow the `go`instructions to [test the installation](https://golang.org/doc/install#testing)
-
-## Install `drive` a drive.google client for commandline
-
-[`drive`](https://github.com/odeke-em/drive#installing) is a command line client using Go language
-
-Add the GOPATH to `.bashrc`
+Or Add the GOPATH directly from terminal:
 
 ```
 cat << ! >> ~/.bashrc
 export GOPATH=\$HOME/go
 export PATH=\$GOPATH:\$GOPATH/bin:\$PATH
 !
+```
+```
 source ~/.bashrc # To reload the settings and get the newly set ones # Or open a fresh terminal
 ```
+
+
+Follow the `go`instructions to [test the installation](https://golang.org/doc/install#testing)
+
+## Install `drive` a drive.google client for commandline
+
+[`drive`](https://github.com/odeke-em/drive#installing) is a command line client using Go language
 
 Install `drive` using `go`
 
