@@ -51,7 +51,7 @@ Add the GOPATH to `.bashrc`
 
 ```
 cat << ! >> ~/.bashrc
-export GOPATH=\$HOME/gopath
+export GOPATH=\$HOME/go
 export PATH=\$GOPATH:\$GOPATH/bin:\$PATH
 !
 source ~/.bashrc # To reload the settings and get the newly set ones # Or open a fresh terminal
