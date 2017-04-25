@@ -1,4 +1,4 @@
-# Getting image files from your Drive.Google into a Jetstream VM
+# Getting files from your Drive.Google into a Jetstream VM
 
 In the US, academic institutions have increasingly established email accounts through Google.
 Some institutions have unlimited [Drive](https://drive.google.com) storage 
@@ -43,7 +43,7 @@ export PATH=$GOPATH:$GOPATH/bin:$PATH
 
 Follow the `go`instructions to [test the installation](https://golang.org/doc/install#testing)
 
-## Install `drive` a `drive.google` client for commandline
+## Install `drive` a drive.google client for commandline
 
 [`drive`](https://github.com/odeke-em/drive#installing) is a command line client using Go language
 
@@ -78,6 +78,7 @@ Test your installation
 ```
 drive ls
 ```
+
 # Pull data from your Google.drive account onto the VM
 
 ```
