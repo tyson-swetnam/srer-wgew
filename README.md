@@ -31,9 +31,9 @@ The University of Arizona's High Performance Computer with GPU, called *El Gato*
 
 ## Desktop Workstations
 
-# Software 
+We used an Intel dual core XEON E5 v3 2630 Supermicro Motherboard Full Tower workstation with 256GB RAM and two NVIDIA 1080GTX GPUs running Microsoft Windows 10. We also used an Intel i7 6900k micro ATX cube with 128 GB RAM and two NVIDIA 1080GTX GPUs running Ubuntu 16.04.
 
-We used an Intel dual core XEON E5 v3 2630 Supermicro workstation with 256GB RAM and two NVIDIA 1080GTX GPUs running Microsoft Windows 10. We also used an Intel i7 6900k micro ATX with 128 GB RAM and two NVIDIA 1080GTX GPUs running Ubuntu 16.04.
+# Software 
 
 ## Docker containers
 
