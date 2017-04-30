@@ -14,6 +14,11 @@ To use an interactive window you need to use the `-X` or `-Y` command
 ```
 ssh -X tswetnam@hpc.arizona.edu
 ```
+## Starting jobs on UA HPC El Gato
+
+El Gato uses `LSF` for its job submissions
+
+Attached are several `BSUB` scripts for running jobs
 
 ## Starting jobs on UA HPC Ocelote
 
