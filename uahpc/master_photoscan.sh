@@ -10,15 +10,15 @@
 #BSUB -o lsf.out
 #BSUB -e lsf.err
 #BSUB -J photoscan-pro
-#BSUB -u tswetnam
+#BSUB -u uid
 #---------------------------------------------------------------------
 
-#name=`uname -n`-ib0
+#name=`uid -n`-ib0
 #echo $name
 #ip=`getent hosts $name | awk '{print $1}'`
 #echo $ip
 
-cd /home/u6/tswetnam/photoscan-pro
+cd /home/uXX/uid/photoscan-pro
 
 # Server
 ./photoscan.sh --server --control 10.0.148.3 --dispatch 10.0.148.3
