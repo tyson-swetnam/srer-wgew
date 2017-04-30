@@ -49,8 +49,8 @@ The goal of this tutorial is to get you up and running with the same VM images, 
 
 *In order to complete this tutorial you will need to have the following inputs prepared*
 
-|Input File(s)|Format|Preparation/Notes|Example Data|
-|-------------|------|-----------------|------------|
+|Input File(s)|Format|Preparation/Notes|URL|Additional Links|
+|-------------|------|-----------------|---|----------------|
 |SRER manned lidar|las / laz| data collected 2011 | |
 |SRER Phantom 4 sUAS sfm | jpg photos | fall 2016| |
 |SRER Phantom 4 sUAS sfm | las / laz | fall 2016 | |
@@ -62,7 +62,7 @@ The goal of this tutorial is to get you up and running with the same VM images, 
 |SRER a6000 sUAS sfm | las / laz | summer 2016 | |
 |SRER Osmo sfm | jpg photos| fall 2016 | |
 |SRER Osmo sfm | las / laz | fall 2016 | | 
-|WGEW manned lidar| las /laz |fall 2015| |
+|WGEW 2015 manned lidar| las /laz |fall 2015|Available from (The National Map](https://viewer.nationalmap.gov/basic/)|[ftp file list]()
 |WGEW Kendall sUAS sfm| jpg photos | fall 2015| |
 |WGEW Kendall sUAS sfm| las / laz | fall 2015| |
 |WGEW Lucky Hills sUAS sfm| jpg photos | fall 2015| |
