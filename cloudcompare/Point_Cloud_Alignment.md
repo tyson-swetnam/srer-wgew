@@ -21,7 +21,7 @@ typically only one to two GCPs were visible per terrestrial sfm cloud.
 
 |Location|Date|Projection|ESPG|RMSE_z [cm]|RMSE_h [cm]|GCP|GCP RMSE [cm]|PPSM (p/m^2)|
 |--------|----|----------|----|-----------|-----------|---|-------------|------------|
-|WGEW|9/16-18/2015|WGS84 UTM Zone 12N|26912|&plusmn;9.6|&plusmn;100|8 - 12||
+|[WGEW ftp link txt file]()|9/16-18/2015|WGS84 UTM Zone 12N|26912|&plusmn;9.6|&plusmn;100|8 - 12||
 |SRER|4/10/2011|NAD83 State Plane HARN Arizona Central, NAVD88|2223|&plusmn; 6.4|&plusmn;100|8 - 13 ||
 |Lucky Hills Velodyne 32|10/8/2015|WGS84 UTM Zone 12N|26912|&plusmn;|&plusmn;|NA|?|?|
 |Kendall Grassland Velodyne 32|10/8/2015|WGS84 UTM Zone 12N|26912|||&plusmn;|NA|?|?|
