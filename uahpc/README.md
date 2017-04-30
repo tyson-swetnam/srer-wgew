@@ -2,7 +2,7 @@
 
 You must have a valid UA NetID
 
-### Logging in
+## Auth
 
 Open a terminal window and `ssh`
 
@@ -15,13 +15,7 @@ To use an interactive window you need to use the `-X` or `-Y` command
 ssh -X tswetnam@hpc.arizona.edu
 ```
 
-
-### Load iRODS
-
-```
-iinit
-```
-
+## [Singularity]()
 
 ### Photoscan
 
