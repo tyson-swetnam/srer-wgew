@@ -1,5 +1,5 @@
 ### This script asks for one entire node (span) on El Gato
-### To start script use `$ bsub lsf.sh` at the bash terminal
+### To start script use `$ bsub elgato_lsf.sh` at the bash terminal
 
 ###========================================
 #!/bin/bash
