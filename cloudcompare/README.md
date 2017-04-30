@@ -1,8 +1,10 @@
 # Analyses in CloudCompare
 
-I installed [CloudCompare](http://www.cloudcompare.org/) using `snapd`
-on the Jetstream images and on our local machines (for better point cloud 
-editing a high end video card is strongly encouraged).
+On my workstations and VMs running Ubuntu I installed [CloudCompare](http://www.cloudcompare.org/) using `snapd`
+
+I also installed CloudCompare on Windows and Mac OS X laptops using alternate installations.
+
+For easier point cloud viewing and editing a high end video card is strongly encouraged).
 
 ### Install [Snapd](https://snapcraft.io/docs/core/install)
 
