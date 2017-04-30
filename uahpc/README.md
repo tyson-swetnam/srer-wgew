@@ -7,18 +7,18 @@ You must have a valid UA NetID
 Open a terminal window and `ssh`
 
 ```
-ssh tswetnam@hpc.arizona.edu
+ssh uid@hpc.arizona.edu
 ```
 To use an interactive window you need to use the `-X` or `-Y` command
 
 ```
-ssh -X tswetnam@hpc.arizona.edu
+ssh -X uidm@hpc.arizona.edu
 ```
 ## Starting jobs on UA HPC El Gato
 
 El Gato uses `LSF` for its job submissions
 
-Attached are several `BSUB` scripts for running jobs
+Attached are several `bsub` scripts for running jobs on El Gato
 
 ## Starting jobs on UA HPC Ocelote
 
@@ -35,7 +35,7 @@ ssh-keygen
 After you've created the key you can use your pub key `~/.ssh/id_rsa.pub` to go ahead and ssh into the UA HPC
 
 ```
-cat ~/.ssh/id_rsa.pub | ssh userid@hpc.arizona.edu "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
+cat ~/.ssh/id_rsa.pub | ssh uid@hpc.arizona.edu "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
 ```
 
 You will have to enter your password and DUO security one last time. You will see that you're not logged into the HPC after this process completes.
@@ -43,10 +43,8 @@ You will have to enter your password and DUO security one last time. You will se
 Now go ahead and log back in using your user id name
 
 ```
-ssh userid@hpc.arizona.edu
+ssh uid@hpc.arizona.edu
 ```
-
-### [Singularity](https://github.com/tyson-swetnam/lidar_sfm_data_fusion/blob/master/uahpc/singularity_docker.md)
 
 ### [Photoscan]()
 
@@ -69,3 +67,5 @@ Start Photoscan worker nodes
 ```
 photoscan_node.sh
 ```
+
+## [Singularity](https://github.com/tyson-swetnam/lidar_sfm_data_fusion/blob/master/uahpc/singularity_docker.md)
