@@ -1,0 +1,9 @@
+# Links from the National Map Viewer https://viewer.nationalmap.gov/basic/
+ftp://rockyftp.cr.usgs.gov/vdelivery/Datasets/Staged/NED/LPC/projects/AZ_Tucson_2011/las/tiled/AZ_Tucson_2011_000579.zip
+ftp://rockyftp.cr.usgs.gov/vdelivery/Datasets/Staged/NED/LPC/projects/AZ_Tucson_2011/las/tiled/AZ_Tucson_2011_000565.zip
+ftp://rockyftp.cr.usgs.gov/vdelivery/Datasets/Staged/NED/LPC/projects/AZ_Tucson_2011/las/tiled/AZ_Tucson_2011_000563.zip
+ftp://rockyftp.cr.usgs.gov/vdelivery/Datasets/Staged/NED/LPC/projects/AZ_Tucson_2011/las/tiled/AZ_Tucson_2011_000564.zip
+ftp://rockyftp.cr.usgs.gov/vdelivery/Datasets/Staged/NED/LPC/projects/AZ_Tucson_2011/las/tiled/AZ_Tucson_2011_000581.zip
+ftp://rockyftp.cr.usgs.gov/vdelivery/Datasets/Staged/NED/LPC/projects/AZ_Tucson_2011/las/tiled/AZ_Tucson_2011_000558.zip
+ftp://rockyftp.cr.usgs.gov/vdelivery/Datasets/Staged/NED/LPC/projects/AZ_Tucson_2011/las/tiled/AZ_Tucson_2011_000562.zip
+ftp://rockyftp.cr.usgs.gov/vdelivery/Datasets/Staged/NED/LPC/projects/AZ_Tucson_2011/las/tiled/AZ_Tucson_2011_000559.zip
