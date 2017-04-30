@@ -15,7 +15,7 @@ To use an interactive window you need to use the `-X` or `-Y` command
 ssh -X tswetnam@hpc.arizona.edu
 ```
 
-## [Singularity]()
+## [Singularity](https://github.com/tyson-swetnam/lidar_sfm_data_fusion/blob/master/uahpc/singularity_docker.md)
 
 ### Photoscan
 
