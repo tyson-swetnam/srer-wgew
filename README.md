@@ -14,6 +14,10 @@ Software used in this study are built in [Docker](https://www.docker.com/). I in
 
 We used [iRODS iCommands](https://pods.iplantcollaborative.org/wiki/display/DS/Setting+Up+iCommands) to move our data from our local machines onto the CyVerse Data Store, and then onto the Jetstream VMs. We also used [Drive](https://github.com/odeke-em/drive) a command line interface for `drive.google.com` to move archived imagery data from the sUAS onto the CyVerse DataStore and VMs. 
 
+## [University of Arizona HPC](https://github.com/tyson-swetnam/lidar_sfm_data_fusion/tree/master/uahpc)
+
+We used the University of Arizona's High Performance Computer with GPU, called *El Gato*, to run [Agisoft Photoscan](http://www.agisoft.com/) in a distributed interface (master + worker nodes). 
+
 ## Software 
 
 ### Docker containers
