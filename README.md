@@ -4,7 +4,9 @@ This repository contains quickstart tutorials, brief explanations, and code adde
 
 ##### Frontiers in Plant Ecology: Optical approaches to remote sensing ([Swetnam et al. (2018)]())
 
-## Jetstream Prerequisites
+## [Jetstream](https://github.com/tyson-swetnam/lidar_sfm_data_fusion/tree/master/jetstream)
+
+[Jetstream Quickstart](https://github.com/tyson-swetnam/lidar_sfm_data_fusion/tree/master/jetstream)
 
 These scripts were run on [Jetstream](https://jetstream-cloud.org/) cloud resources with different [base images](https://use.jetstream-cloud.org/application/images/54) and [custom images](https://use.jetstream-cloud.org/application/images/330) images using Docker, GRASS and GDAL GIS, R and RStudio.
 
@@ -22,11 +24,11 @@ We used [iRODS iCommands](https://pods.iplantcollaborative.org/wiki/display/DS/S
 
 [QGIS](https://github.com/kartoza/docker-qgis-desktop) Version 2.14 LTR
 
-### Snap
+### [CloudCompare](https://github.com/tyson-swetnam/lidar_sfm_data_fusion/tree/master/cloudcompare)
 
-[Snap](https://snapcraft.io/docs/core/install)
+[CloudCompare quickstart](https://github.com/tyson-swetnam/lidar_sfm_data_fusion/tree/master/cloudcompare)
 
-[CloudCompare](http://www.danielgm.net/cc/) Version 2.9.1
+We installed [CloudCompare](http://www.danielgm.net/cc/) Version 2.9.1 using [Snap](https://snapcraft.io/docs/core/install)
 
 ### OSGEO
 
