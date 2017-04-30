@@ -2,6 +2,8 @@
 
 This repository contains quickstart tutorials, brief explanations, and code addendums. The data are linked to [CyVerse DataCommons](http://datacommons.cyverse.org/) and national data repositories.
 
+##### [List of Tables]()
+
 ##### Frontiers in Plant Ecology: Optical approaches to remote sensing ([Swetnam et al. (2018)]())
 
 ## [Jetstream](https://github.com/tyson-swetnam/lidar_sfm_data_fusion/tree/master/jetstream)
@@ -16,7 +18,7 @@ We used [iRODS iCommands](https://pods.iplantcollaborative.org/wiki/display/DS/S
 
 ## [University of Arizona HPC](https://github.com/tyson-swetnam/lidar_sfm_data_fusion/tree/master/uahpc)
 
-We used the University of Arizona's High Performance Computer with GPU, called *El Gato*, to run [Agisoft Photoscan](http://www.agisoft.com/) in a distributed interface (master + worker nodes). 
+We used the University of Arizona's High Performance Computer with GPU, called *El Gato*, to run structure from motion modelling in [Agisoft Photoscan](http://www.agisoft.com/) in a distributed interface (master + worker nodes). 
 
 ## Software 
 
