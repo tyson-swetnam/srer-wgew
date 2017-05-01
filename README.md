@@ -1,17 +1,17 @@
 # Background
 
-This repository contains quickstart tutorials, brief explanations, and code addendums. The data are linked to [CyVerse DataCommons](http://datacommons.cyverse.org/) and national data repositories.
+This repository contains quickstart tutorials, brief explanations, and code addendums to [Swetnam et al. (2018)]() in Frontiers in Plant Science: Optical approaches to remote sensing special issue The data not available on national data repositories are linked to [CyVerse DataCommons](http://datacommons.cyverse.org/).
 
-##### List of Tables
+##### Metadata tables
 
-* Cameras
-
-* sUAS
-
-* Lidar Datasets
-
-
-##### Frontiers in Plant Ecology: Optical approaches to remote sensing ([Swetnam et al. (2018)]())
+|Tables List|
+|-----------|
+|[Cameras and lenses](https://github.com/tyson-swetnam/lidar_sfm_data_fusion/blob/master/sfm/agisoft_photoscan.md#digital-camera-specifications)|
+|[small unmanned aerial systems (sUAS)]()|
+|[Aerial lidar point clouds](https://github.com/tyson-swetnam/lidar_sfm_data_fusion/blob/master/cloudcompare/Point_Cloud_Alignment.md#aerial-lidar)|
+|[Terrestrial lidar point clouds](https://github.com/tyson-swetnam/lidar_sfm_data_fusion/blob/master/cloudcompare/Point_Cloud_Alignment.md#terrestrial-laser-scanning)|
+|[sUAS structure from fotion(SFM) point clouds](https://github.com/tyson-swetnam/lidar_sfm_data_fusion/blob/master/cloudcompare/Point_Cloud_Alignment.md#suas-sfm)|
+|[Handheld sfm point clouds]()|
 
 # Hardware
 
@@ -33,15 +33,15 @@ The University of Arizona's High Performance Computer with GPU, called *El Gato*
 
 We used an Intel dual core XEON E5 v3 2630 Supermicro Motherboard Full Tower workstation with 256GB RAM and two NVIDIA 1080GTX GPUs running Microsoft Windows 10. We also used an Intel i7 6900k micro ATX cube with 128 GB RAM and two NVIDIA 1080GTX GPUs running Ubuntu 16.04.
 
-# Software 
+# GIS Software 
 
 ## Docker containers
 
-[PDAL](https://www.pdal.io/) Version 1.5
-
-[Entwine](https://entwine.io/) Version 1.0
-
-[QGIS](https://github.com/kartoza/docker-qgis-desktop) Version 2.14 LTR
+|Software|Version|Date|
+|--------|-------|----|
+|[PDAL](https://www.pdal.io/)|1.5||
+|[Entwine](https://entwine.io/)|1.0||
+|[QGIS](https://github.com/kartoza/docker-qgis-desktop)|2.14 LTR||
 
 ## [CloudCompare](https://github.com/tyson-swetnam/lidar_sfm_data_fusion/tree/master/cloudcompare)
 
