@@ -1,4 +1,6 @@
-# Analyses in CloudCompare
+# CloudCompare
+
+## Setting up CloudCompare for the first time
 
 On my workstations and VMs running Ubuntu I installed [CloudCompare](http://www.cloudcompare.org/) using `snapd`
 
