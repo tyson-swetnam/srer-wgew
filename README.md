@@ -2,15 +2,13 @@
 
 This repository contains quickstart tutorials, brief explanations, and code addendums to [Swetnam et al. (2018)]() in Frontiers in Plant Science: Optical approaches to remote sensing special issue The data not available on national data repositories are linked to [CyVerse DataCommons](http://datacommons.cyverse.org/).
 
-##### Metadata tables
-
-|Tables List|
-|-----------|
+|Metadata Table List|
+|-------------------|
 |[Cameras and lenses](https://github.com/tyson-swetnam/lidar_sfm_data_fusion/blob/master/sfm/agisoft_photoscan.md#digital-camera-specifications)|
-|[small unmanned aerial systems (sUAS)]()|
+|[small Unmanned Aerial Systems (sUAS) platforms]()|
 |[Aerial lidar point clouds](https://github.com/tyson-swetnam/lidar_sfm_data_fusion/blob/master/cloudcompare/Point_Cloud_Alignment.md#aerial-lidar)|
 |[Terrestrial lidar point clouds](https://github.com/tyson-swetnam/lidar_sfm_data_fusion/blob/master/cloudcompare/Point_Cloud_Alignment.md#terrestrial-laser-scanning)|
-|[sUAS structure from fotion(SFM) point clouds](https://github.com/tyson-swetnam/lidar_sfm_data_fusion/blob/master/cloudcompare/Point_Cloud_Alignment.md#suas-sfm)|
+|[sUAS structure from motion (sfm) point clouds](https://github.com/tyson-swetnam/lidar_sfm_data_fusion/blob/master/cloudcompare/Point_Cloud_Alignment.md#suas-sfm)|
 |[Handheld sfm point clouds]()|
 
 # Hardware
