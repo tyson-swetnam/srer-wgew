@@ -32,8 +32,8 @@ The goal of this tutorial is to get you up and running with the same VM images, 
 |Prerequisite|Preparation/Notes|Link/Download|
 |------------|-----------------|-------------|
 |CyVerse account|You will need a CyVerse account to complete this exercise|[Register](https://user.cyverse.org/)|
-|Atmosphere access|You must have access to Atmosphere|[Request Access](http://www.cyverse.org/learning-center/manage-account#AddAppsServices)|
-|Jetstream access|You must register with [XSEDE](https://portal.xsede.org/my-xsede#/guest) and request an allocation|[Request Access](https://portal.xsede.org/submit-request#/login)|
+|Atmosphere access|You must register with CyVerse, and request access to Atmosphere|[Request Access](http://www.cyverse.org/learning-center/manage-account#AddAppsServices)|
+|Jetstream access|You must register with [XSEDE](https://portal.xsede.org/my-xsede#/guest) and then request an allocation on Jetstream|[Request Access](https://portal.xsede.org/submit-request#/login)|
 |Cyberduck|Stand alone software for upload/download to Data Store|[Download](https://cyberduck.io/)|
 
 ### Platform(s)
