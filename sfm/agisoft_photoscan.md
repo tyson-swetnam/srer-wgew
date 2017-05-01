@@ -56,7 +56,7 @@ Exposure compensation|0|0|0|0|0|
 
 ## Flight / Collection Parameters
 
-*amsl* = meaters above ground level
+*agl* = above ground level
 *m/s* = meters per second (forward air speed)
 The Sony a6000 was flown on the BirdsEyeView Firefly6, the Osmo was carried by hand on a 1 meter range pole.
 
