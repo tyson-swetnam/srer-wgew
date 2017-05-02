@@ -1,3 +1,29 @@
+# Starting jobs on UA HPC Ocelote
+
+Ocelote uses PBS to manage jobs. [UA HPC Manual wiki](https://confluence.arizona.edu/display/UAHPC/Training)
+
+### Setting up UA HPC w/o using password and DUO security
+
+If you haven't done so, create an .ssh key, [generic instructions here](https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys)
+
+```
+ssh-keygen
+```
+
+After you've created the key you can use your pub key `~/.ssh/id_rsa.pub` to go ahead and ssh into the UA HPC
+
+```
+cat ~/.ssh/id_rsa.pub | ssh userid@hpc.arizona.edu "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
+```
+
+You will have to enter your password and DUO security one last time. You will see that you're not logged into the HPC after this process completes.
+
+Now go ahead and log back in using your user id name
+
+```
+ssh userid@hpc.arizona.edu
+```
+
 ### Request 1 node on Ocelote
 
 To start a job on Ocelote I can use a basic `qsub`, e.g.
@@ -22,7 +48,7 @@ $ . ocelote_pbs.sh
 
 After submitting your job you will see something like this:
 
-### Submitting a nod request to the UA HPC
+### Submitting a node request to the UA HPC
 ```
 [tswetnam@login3 ~]$ qsub -I -N tswetnam_singularity -m bea -M tswetnam@email.arizona.edu -W group_list=tswetnam -q standard -l select=1:ncpus=28:mem=168gb -l cput=28:0:0 -l walltime=1:0:0
 qsub: waiting for job 640578.head1.cm.cluster to start
@@ -45,3 +71,4 @@ Within an Entwine container
 
 ```
 enwine build /
+```
