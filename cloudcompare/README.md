@@ -1,5 +1,7 @@
 # CloudCompare
 
+In this folder I describe the process of aligning two different point clouds using CloudCompare and measuring their difference in the X, Y, and Z dimensions.
+
 ## Setting up CloudCompare for the first time
 
 On my workstations and VMs running Ubuntu I installed [CloudCompare](http://www.cloudcompare.org/) using `snapd`
@@ -29,7 +31,7 @@ $ sudo snap refresh --edge
 
 ## [Point Cloud Alignment](http://www.cloudcompare.org/doc/wiki/index.php?title=Point_picking)
 
-The different point cloud datasets use various datums and projections. When these data are loaded for the first time together in CloudCompare the differences in their horizontal and vertical positions are often painfully obvious. 
+The different point cloud datasets use [various datums and projections](https://github.com/tyson-swetnam/lidar_sfm_data_fusion/blob/master/cloudcompare/Point_Cloud_Alignment.md#aerial-lidar). When these data are loaded for the first time together in CloudCompare the differences in their horizontal and vertical positions are often painfully obvious. 
 
 In order to align datasets that are offset we used the CloudCompare [3-point picking](http://www.cloudcompare.org/doc/wiki/index.php?title=Point_picking)
 
