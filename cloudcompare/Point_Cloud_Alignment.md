@@ -36,8 +36,8 @@ SRER sUAS models were georeferenced based on the GCPs established with the [Leic
 |Sensefly eBee Ag|Kendall Grassland|10/8/2015|WGS84 UTM Zone 12N|26912|&plusmn;25cm?|&plusmn;50cm?|None| | 
 |DJI Phantom4|Santa Rita Woodland|8/17/2016|WGS84 UTM Zone 12N|26912|&plusmn;??|&plusmn;??|dGPS| |
 |DJI Phantom4|Santa Rita Woodland|9/28/2016|WGS84 UTM Zone 12N|26912|&plusmn;??|&plusmn;??|dGPS| |
-|BirdseyeView Firefly6|Santa Rita Woodland|3/17/2016|?|||||||
-|BirdsEyeView Firefly6|Santa Rita Woodland|6/28/2016|
+|BirdseyeView Firefly6|Santa Rita Woodland|3/17/2016|WGS84 UTM Zone 12N|26912|&plusmn;??|&plusmn;??|dGPS| |
+|BirdsEyeView Firefly6|Santa Rita Woodland|6/28/2016|WGS84 UTM Zone 12N|26912|&plusmn;??|&plusmn;??|dGPS| |
 
 ### Terrestrial laser scanning
 The TLS models were georeferenced in [Riegl RiScan software](http://www.riegl.com/products/software-packages/)
