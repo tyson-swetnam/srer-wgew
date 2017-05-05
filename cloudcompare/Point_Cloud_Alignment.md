@@ -27,16 +27,6 @@ The TLS models were georeferenced in [Riegl RiScan software](http://www.riegl.co
 |Santa Rita Woodland|8/25/2016|WGS84 UTM Zone 12N|26912|&plusmn;1|&plusmn;2|dGPS|??|
 |Santa Rita Woodland|9/30/2016|WGS84 UTM Zone 12N|26912|&plusmn;1|&plusmn;2|dGPS|??|
 
-### Terrestrial sfm
-|Location|Camera|Date|Projection|ESPG|RMSE_z [cm]|RMSE_h [cm]|GCP|GCP RMSE [cm]|PPSM (p/m^2)|
-|--------|------|----|----------|----|-----------|-----------|---|-------------|------------|
-|SRER Opuntia|a6000|
-|SRER Mesquite|a6000|
-|SRER Mesquite|Osmo|
-|SRER Grasses|a6000|
-|SRER plot 4|DJI Osmo||
-|SRER plot x|DJI Osmo||
-
 ### Ground Control
 
 |Dataset|Type|RMSE|
