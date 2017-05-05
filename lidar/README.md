@@ -7,7 +7,11 @@ The SRER lidar data, as delivered, were in alternate projections to the TLS and 
 The WGEW lidar contained outliers which needed to be filtered. The WGEW data are in LAS 1.4 which uses different file structure and requires updated software for reading.
 
 
-### Aerial Lidar Projection and uncertainty
+### Aerial Lidar Projection and instrument uncertainty
+
+The values provided below are mostly from the vendor reports which used known surfaces (e.g. runways) and ground control surveys to establish uncertainty. In the case of the sUAS Velodyne 32, [Sankey et. al. (2017)](http://onlinelibrary.wiley.com/doi/10.1002/rse2.44/full) reported the RMSE for the instrument over WGEW.
+
+##### Table: aerial lidar details and instrument uncertainty (GPS + IMU).  
 
 |Location|Date|LAS version|Projection|ESPG|RMSE_z [cm]|RMSE_h [cm]|GCP|GCP RMSE [cm]|PPSM (p/m^2)|
 |--------|----|-----------|----------|----|-----------|-----------|---|-------------|------------|
