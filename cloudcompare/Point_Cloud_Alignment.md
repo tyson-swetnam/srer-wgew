@@ -17,20 +17,6 @@ Their locations were referenced from the GCPs visible in the processed
 clouds or features referenced in other point clouds (TLS, sUAS), 
 typically only one to two GCPs were visible per terrestrial sfm cloud.
 
-
-### sUAS sfm 
-
-SRER sUAS models were georeferenced based on the GCPs established with the [Leica dGPS]()
-
-|sUAS|Location|Date|Projection|ESPG|RMSE_z [cm]|RMSE_h [cm]|GCP|GCP RMSE [cm]|PPSM (p/m^2)|
-|----|--------|----|----------|----|-----------|-----------|---|-------------|------------|
-|Sensefly eBee Ag|Lucky Hills|10/8/2015|WGS84 UTM Zone 12N|26912|&plusmn;25cm?|&plusmn;50cm?|None| |
-|Sensefly eBee Ag|Kendall Grassland|10/8/2015|WGS84 UTM Zone 12N|26912|&plusmn;25cm?|&plusmn;50cm?|None| | 
-|DJI Phantom4|Santa Rita Woodland|8/17/2016|WGS84 UTM Zone 12N|26912|&plusmn;??|&plusmn;??|dGPS| |
-|DJI Phantom4|Santa Rita Woodland|9/28/2016|WGS84 UTM Zone 12N|26912|&plusmn;??|&plusmn;??|dGPS| |
-|BirdseyeView Firefly6|Santa Rita Woodland|3/17/2016|WGS84 UTM Zone 12N|26912|&plusmn;??|&plusmn;??|dGPS| |
-|BirdsEyeView Firefly6|Santa Rita Woodland|6/28/2016|WGS84 UTM Zone 12N|26912|&plusmn;??|&plusmn;??|dGPS| |
-
 ### Terrestrial laser scanning
 The TLS models were georeferenced in [Riegl RiScan software](http://www.riegl.com/products/software-packages/)
 
