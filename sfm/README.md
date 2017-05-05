@@ -8,8 +8,8 @@ SRER sUAS models were georeferenced based on the GCPs established with the [Leic
 |----|--------|----|----------|----|-----------|-----------|---|-------------|------------|
 |Sensefly eBee Ag|Lucky Hills|10/8/2015|WGS84 UTM Zone 12N|26912|&plusmn;25cm?|&plusmn;50cm?|None| |
 |Sensefly eBee Ag|Kendall Grassland|10/8/2015|WGS84 UTM Zone 12N|26912|&plusmn;25cm?|&plusmn;50cm?|None| | 
-|DJI Phantom4|Santa Rita Woodland|8/17/2016|WGS84 UTM Zone 12N|26912|&plusmn;??|&plusmn;??|dGPS|12,000 - 34,000|
-|DJI Phantom4|Santa Rita Woodland|9/28/2016|WGS84 UTM Zone 12N|26912|&plusmn;??|&plusmn;??|dGPS|12,000 - 34,000|
+|DJI Phantom4|Santa Rita Woodland|8/17/2016|WGS84 UTM Zone 12N|26912|&plusmn;??|&plusmn;??|dGPS|2?|12,000 - 34,000|
+|DJI Phantom4|Santa Rita Woodland|9/28/2016|WGS84 UTM Zone 12N|26912|&plusmn;??|&plusmn;??|dGPS|2?|12,000 - 34,000|
 |BirdseyeView Firefly6|Santa Rita Woodland|3/17/2016|WGS84 UTM Zone 12N|26912|&plusmn;??|&plusmn;??|NA| |
 |BirdsEyeView Firefly6|Santa Rita Woodland|6/28/2016|WGS84 UTM Zone 12N|26912|&plusmn;??|&plusmn;??|NA| |
 
