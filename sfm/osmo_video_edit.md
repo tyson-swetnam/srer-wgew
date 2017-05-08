@@ -8,7 +8,7 @@ The elevation of the Osmo was ~ 2.5 - 3.5 meters above ground level.
 
 ## Video decomposition
 
-I used `ffmpeg` to convert the .mp4 and .avi files to JPEG images
+I used [`ffmpeg`](https://ffmpeg.org/) to convert the .mp4 and .avi files to JPEG images
 
 ```
 ffmpeg -i myvideo.avi -qscale:v 2 -vf fps=3 img%03d.jpg
@@ -19,3 +19,5 @@ where `fps=3` creates an image rate of 3 frames a second (we shot our 4k video a
 We do not need to extract all 24 frames per second of film. 
 
 I use `%03d` to add the number of images, here I am trying to keep my images under 1,000 per video.
+
+`-qscale:v 2` renders the highest quality `.jpg`
