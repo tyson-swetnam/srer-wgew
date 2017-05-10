@@ -16,7 +16,7 @@ ffmpeg -i myvideo.avi -qscale:v 2 -vf fps=3 img%03d.jpg
 
 where `fps=3` creates an image rate of 3 frames a second (we shot our 4k video at 24 and 30 fps).
 
-We do not need to extract all 24 frames per second of film. 
+We do not need to extract all 24 frames per second of film. The rate of frame extraction should be consistent with an 80%-85% overlap between neighboring images to ensure successful alignment of images in the sfm program.  
 
 I use `%03d` to add the number of images, here I am trying to keep my images under 1,000 per video.
 
