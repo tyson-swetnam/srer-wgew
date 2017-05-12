@@ -34,7 +34,7 @@ docker run -p 3000:3000 opendronemap/node-opendronemap
 
 Unlike Agisoft Photoscan, [OpenDroneMap](https://github.com/OpenDroneMap/OpenDroneMap/wiki/Process-Breakdown) uses open-source sfm-mvs.
 
-Pameter settings are exposed in the Dashboard 
+[PMVS Parameter](http://www.di.ens.fr/pmvs/documentation.html) settings are exposed in the Dashboard 
 
 Add a Project
 
@@ -51,25 +51,25 @@ Set Options
 |force-focal|default|override focal length|
 |resize-to|**max width**|use the maximum image width, equivalent to 'ultra high' resolution|
 |texturing-keep-unseen-faces|default|keeps faces in mesh not seen|
-|pmvs-level|default|level in image pyramid for computation|
-|pmvs-threshold|default|success if > threshold|
+|pmvs-level|**0**|original image size for computation|
+|pmvs-threshold|**0.9**|success if > threshold, default = 0.7|
 |texturing-outlier-removal-type|default|type of outlier removal tool|
 |texturing-skip-hole-filling|default|fills holes in mesh|
-|orthophoto-resolution|default|pixels/meter|
+|orthophoto-resolution|**50**|pixels/meter, default=20|
 |force-ccd|default|overide ccd width|
 |orthophooto-no-tiled|default|stripe GeoTIFF|
 |mesh-size|default|number of vertexes in mesh|
 |orthophoto-compression|default|set the compression|
 |matcher-distance|default|distance threshold to GPS data|
 |verbose|default|print messages to console|
-|pmvs-csize|default|cell-size controls density of reconstruction|
-|use-exif|default|uses exif geotag|
+|pmvs-csize|**3**|cell-size controls density of reconstruction, default=2|
+|use-exif|**true**|uses exif geotag, default=false|
 |mesh-samples|default|number of points per octree node|
 |texturing-skip-local|default|skip local seem blending|
 |pmvs-wsize|default|pixel sample color resolution|
 |orthophoto-target-srs|default|sets EPSG|
-|texutring-tone-mapping|default|turn on gamma tone|
-|pmvs-min-images|default|min # images for reconstruction|
+|texturing-tone-mapping|default|turn on gamma tone|
+|pmvs-min-images|**5**|min 5 images for reconstruction, default=3|
 |opensfm-processes|**default**|max # cores for processing dense reconstruction|
 |texturing-skip-global-seam-leveling|default|skip seams, useful for IR|
 |texturing skip-visibility-test|default|skip geometric visiblity|
