@@ -65,6 +65,11 @@ Follow the `go`instructions to [test the installation](https://golang.org/doc/in
 Install `drive` using `go`
 
 ```
+#install git
+sudo apt-get install git
+```
+
+```
 cd ~/go
 go get -u github.com/odeke-em/drive/cmd/drive
 ```
