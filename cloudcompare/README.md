@@ -28,6 +28,11 @@ There is a bug in the current LTR version of CC (v2.8.1) so we moved to use the 
 $ sudo snap refresh --edge
 ```
 
+In order to access external volumes with the snap install of CloudCompare:
+
+```
+sudo snap connect  cloudcompare:removable-media  :removable-media
+```
 
 ## [Point Cloud Alignment](http://www.cloudcompare.org/doc/wiki/index.php?title=Point_picking)
 
