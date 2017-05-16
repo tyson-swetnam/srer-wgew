@@ -8,6 +8,7 @@ survey or RTK-GPS.
 In Kendall Grassland and Lucky Hill Shrubland reflective laser targets 
 were placed on five rebar stakes whose locations were established 
 from USGS benchmarks and back azimuth measured from a TotalStation.
+These ground control points were used for both Kendall Grassland TLS scans.
 
 At the SRER woodland site ground control pins were placed throughout
 the survey area (13 rebar stakes) and located using RTK-GPS.
@@ -23,6 +24,7 @@ The TLS models were georeferenced in [Riegl RiScan software](http://www.riegl.co
 |Location|Date|Projection|ESPG|RMSE_z [cm]|RMSE_h [cm]|GCP|GCP RMSE [cm]|PPSM (p/m^2)|
 |--------|----|----------|----|-----------|-----------|---|-------------|------------|
 |Lucky Hills|?|WGS84 UTM Zone 12N|26912|&plusmn;1|&plusmn;2|TotalStation|??|
+|Kendall Grassland|9/24/2015|WGS84 UTM Zone 12N|26912|&plusmn;1|&plusmn;2|TotalStation|??|
 |Kendall Grassland|10/9/2015|WGS84 UTM Zone 12N|26912|&plusmn;1|&plusmn;2|TotalStation|??|
 |Santa Rita Woodland|8/25/2016|WGS84 UTM Zone 12N|26912|&plusmn;1|&plusmn;2|dGPS|??|
 |Santa Rita Woodland|9/30/2016|WGS84 UTM Zone 12N|26912|&plusmn;1|&plusmn;2|dGPS|??|
@@ -52,6 +54,14 @@ The sUAS use small relatively cheap GNSS units, such as the [ublox](https://www.
 |ServiceDrone||GPS/GLONASS|||||
 |eBeeAg|?|?|||||
 
+# M3C2
+
+The Multiscale Model to Model Cloud Comparison (M3C2)([Lague et al. 2013](https://geosciences.univ-rennes1.fr/IMG/pdf/Accurate_3D_point_cloud_comparison_Lague_et_al-_revised_with_figures_feb2013.pdf)): 
+* operates directly on point clouds without meshing or gridding.
+* computes the local distance between two point clouds along the normal surface direction
+* estimates for each distance measurement a confidence interval depending on point cloud roughness and registration error.
+
+We use M3C2 to evaluate the absolute differences between point clouds in CloudCompare (v2.9.1).
 
 ### Reprojection
 
