@@ -23,6 +23,8 @@ typically only one to two GCPs were visible per terrestrial sfm cloud.
 |Location|Date|Projection|ESPG|RMSE_z [cm]|RMSE_h [cm]|GCP|GCP RMSE [cm]|PPSM (p/m^2)|
 |--------|----|----------|----|-----------|-----------|---|-------------|------------|
 |Kendall Grassland|9/20/2015|WGS84 UTM Zone 12N|32612|&plusmn;0.096|&plusmn;1.0|||8-16|
+|Lucky Hills Shrubland|9/20/2015|WGS84 UTM Zone 12N|32612|&plusmn;0.096|&plusmn;1.0|||8-16|
+|Santa Rita Experimental Range|4/20/2011|Arizona Central State Plane (Int. Feet)|2868|&plusmn;0.264|&plusmn;1.0|||8-12|
 
 ### SfM
 
