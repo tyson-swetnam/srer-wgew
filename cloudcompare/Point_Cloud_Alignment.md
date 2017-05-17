@@ -18,6 +18,57 @@ Their locations were referenced from the GCPs visible in the processed
 clouds or features referenced in other point clouds (TLS, sUAS), 
 typically only one to two GCPs were visible per terrestrial sfm cloud.
 
+### Aerial lidar
+
+|Location|Date|Projection|ESPG|RMSE_z [cm]|RMSE_h [cm]|GCP|GCP RMSE [cm]|PPSM (p/m^2)|
+|--------|----|----------|----|-----------|-----------|---|-------------|------------|
+|Kendall Grassland|9/20/2015|WGS84 UTM Zone 12N|32612|&plusmn;0.096|&plusmn;1.0|||8-16|
+
+### SfM
+
+The eBee used its own GPS for positioning the point cloud; without ground control the output cloud was over 30 meters lower than the ALS or TLS lidar point clouds.
+
+The eBee used WGS84 in Latitude and Longitude, while the other datasets use UTM. to change I used a PDAL pipeline reproject.json:
+
+```
+$ docker run -v ${PWD}:/data pdal/pdal:1.5 pdal pipeline /data/reprojection.json
+$ sudo chown ${USER}:${USER} ebee_utm.las
+```
+```
+{
+  "pipeline":[
+    {
+      "filename":"/data/ebee_multispec_ultra_mild.las",
+      "type":"readers.las",
+      "spatialreference":"EPSG:4326"
+    },
+    {
+      "type":"filters.reprojection",
+      "in_srs":"EPSG:4326",
+      "out_srs":"EPSG:32612"
+    },
+    {
+      "type":"writers.las",
+      "scale_x":"0.0001",
+      "scale_y":"0.0001",
+      "scale_z":"0.0001",
+      "offset_x":"auto",
+      "offset_y":"auto",
+      "offset_z":"auto",
+      "filename":"/data/ebee_utm.las"
+    }
+  ]
+}
+
+
+```
+
+
+|sUAS|Location|Date|Projection|ESPG|RMSE_z [cm]|RMSE_h [cm]|GCP|GCP RMSE [cm]|PPSM (p/m^2)|
+|----|--------|----|----------|----|-----------|-----------|---|-------------|------------|
+|ebee|Kendall Grassland|9/20/2015|WGS84|4326|&plusmn;0.096|&plusmn;1.0|||8-16|
+|ebee|Lucky Hills Shrubland|9/20/2015|WGS84|4326|&plusmn;0.096|&plusmn;1.0|||8-16|
+
 ### Terrestrial laser scanning
 The TLS models were georeferenced in [Riegl RiScan software](http://www.riegl.com/products/software-packages/)
 
@@ -80,6 +131,11 @@ docker run -v ${PWD}:/data pdal/pdal:1.5 pdal translate \
 ```
 
 WGEW 2015
+
+```
+docker run -v ${PWD}:/data pdal/pdal:1.5 pdal translate\
+/data/
+```
 
 ### Outlier Removal
 
