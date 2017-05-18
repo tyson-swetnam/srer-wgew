@@ -1,22 +1,34 @@
-# Input Point Clouds
+# Ground Control Points
 
-At both the WGEW and SRER sites the Riegl terrestrial laser scanner 
-was set up using reflective targets placed atop ground control 
-rebar pins whose locations were established from either TotalStation 
-survey or RTK-GPS.
+At both the WGEW and SRER the Riegl VZ-400 terrestrial laser scanner 
+used reflective 1.5 meter (m) tall laser targets placed atop 
+ground control points (GCP), rebar pins whose locations were 
+established from TotalStation survey from USGS back azimuth or RTK-GPS.
 
-In Kendall Grassland and Lucky Hill Shrubland reflective laser targets 
-were placed on five rebar stakes whose locations were established 
+In the Kendall Grassland and Lucky Hill Shrubland the reflective laser targets 
+were placed atop at least five rebar stakes, whose locations were established 
 from USGS benchmarks and back azimuth measured from a TotalStation.
-These ground control points were used for both Kendall Grassland TLS scans.
 
-At the SRER woodland site ground control pins were placed throughout
-the survey area (13 rebar stakes) and located using RTK-GPS.
+At the SRER woodland site GCPs were placed throughout the survey area 
+using rebar stakes. For the SfM 20cm black and white circular targets
+were placed over the center of each pin. Pins were later geolocated using
+a Trimble RTK-GPS.
 
-The terrestrial sfm from the Sony a6000 and DJI Osmo did not use GPS. 
-Their locations were referenced from the GCPs visible in the processed 
-clouds or features referenced in other point clouds (TLS, sUAS), 
-typically only one to two GCPs were visible per terrestrial sfm cloud.
+The terrestrial SfM from the Sony a6000 and DJI Osmo did not use any 
+onboard GPS. 
+The geolocations were referenced from the GCPs which were visible in point
+clouds or features referenced from other point clouds (TLS, sUAS), 
+typically at least two GCPs were visible per terrestrial sfm cloud. In cases
+where GCPs were not visible, large embedded features like cobbles, road marks, 
+fence posts, or woody snags and stumps were used.
+
+## CloudCompare .bin data
+
+|Location|Types|# Point clouds|File size|Link|
+|--------|-----|--------------|---------|----|
+|Kendall Grassland|sUAS lidar, ALS, TLS, UAS SfM|6|1.7 Gb|[CyVerse DataStore](http://de.cyverse.org/dl/d/F7FFCD8F-04A3-4157-A7F4-B10B7D7A1581/kendall_frontiers_aoi_project1.bin)|
+|Lucky Hills Shrubland|sUAS lidar, TLS, UAS SfM|4||2.7 Gb|[CyVerse DataStore](http://de.cyverse.org/dl/d/741A4C61-33F0-4F5E-B017-6F10F81F4ED6/luckyhills_frontiers_project_aoi1.bin)|
+|Santa Rita Grazing|ALS, TLS, sUAS SfM|5|[CyVerse DataStore]()|
 
 ### Aerial lidar
 
@@ -28,9 +40,12 @@ typically only one to two GCPs were visible per terrestrial sfm cloud.
 
 ### SfM
 
-The eBee used its own GPS for positioning the point cloud; without ground control the output cloud was over 30 meters lower than the ALS or TLS lidar point clouds.
+The eBee used onboard GPS for positioning the point cloud; 
+without ground control the output cloud was over 30 meters 
+lower than the ALS or TLS lidar point clouds.
 
-The eBee used WGS84 in Latitude and Longitude, while the other datasets use UTM. to change I used a PDAL pipeline reproject.json:
+eBee GPS used WGS84 in Latitude and Longitude, while the other 
+datasets use UTM. To change I used a PDAL pipeline reproject.json:
 
 ```
 $ docker run -v ${PWD}:/data pdal/pdal:1.5 pdal pipeline /data/reprojection.json
