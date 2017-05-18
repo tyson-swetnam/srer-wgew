@@ -5,8 +5,8 @@ Each study area is saved as a binary (*\*.bin*) file with all of the available p
 |Location|Types|# Point clouds|File size|Link|
 |--------|-----|--------------|---------|----|
 |Kendall Grassland|sUAS lidar, ALS, TLS, UAS SfM|6|1.7 Gb|[CyVerse DataStore](http://de.cyverse.org/dl/d/F7FFCD8F-04A3-4157-A7F4-B10B7D7A1581/kendall_frontiers_aoi_project1.bin)|
-|Lucky Hills Shrubland|sUAS lidar, TLS, UAS SfM|4||2.7 Gb|[CyVerse DataStore](http://de.cyverse.org/dl/d/741A4C61-33F0-4F5E-B017-6F10F81F4ED6/luckyhills_frontiers_project_aoi1.bin)|
-|Santa Rita Grazing|ALS, TLS, sUAS SfM|5|[CyVerse DataStore]()|
+|Lucky Hills Shrubland|sUAS lidar, TLS, UAS SfM|4|2.7 Gb|[CyVerse DataStore](http://de.cyverse.org/dl/d/741A4C61-33F0-4F5E-B017-6F10F81F4ED6/luckyhills_frontiers_project_aoi1.bin)|
+|Santa Rita Grazing|ALS, TLS, sUAS SfM|5|5 Gb|[CyVerse DataStore]()|
 
 ## Ground Control 
 
