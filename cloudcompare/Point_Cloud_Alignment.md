@@ -13,7 +13,8 @@ Each study area is saved as a binary (*\*.bin*) file with all of the available p
 At both the WGEW and SRER the Riegl VZ-400 terrestrial laser scanner 
 used reflective 1.5 meter (m) tall laser targets placed atop 
 ground control points (GCP)(rebar pins) whose locations were 
-established from TotalStation survey from USGS back azimuth or RTK-GPS.
+established from TotalStation survey from back azimuth to USGS 
+benchmarks or Trimble RTK-GPS.
 
 In the Kendall Grassland and Lucky Hill Shrubland the reflective laser targets 
 were placed atop at least five rebar stakes, whose locations were established 
