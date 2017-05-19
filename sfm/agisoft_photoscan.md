@@ -67,5 +67,5 @@ The Sony a6000 was flown on the [BirdsEyeView Firefly6](https://www.birdseyeview
 |Forward overlap (%)|80|85|85|>90|>90|
 |Side overlap (%)|~80|85|85|>90|>90|
 |Obliquity (&deg;)|0-15|30|30|20-45|20-45|
-|Estimated pixel size (*mm*)|10|11|11|<1|<1|
+|Estimated pixel size (*mm*)|25-50|11|11|<1|<1|
 
