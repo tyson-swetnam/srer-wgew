@@ -34,8 +34,8 @@ keep the RAM use beneath the available amount.
 |Sensor (mm)|Sony EXMOR APS-C (23.5x15.6)|Sony EXMOR 1/2.3" (6.3x4.72)|Sony EXMOR 1/2.3" (6.3x4.72)|Sony EXMOR 1/2.3" (6.3x4.72)|Panasonic Micro 4/3" (17.3x13)| 
 |Effective Sensor Resolution (megapixel)|24.3|12|12|12|16|
 |Lens|35 mm|20mm (35 mm equivalent)|20mm (35 mm equivalent)|20mm (35 mm equivalent)|30 mm|
-|Resolution|6000x4000|4000x3000|4000x3000|4000x3000|4608x3456| 
-|HD Video|1080p|4k|4k|4k|4k| 
+|Still image resolution|6000x4000|4000x3000|4000x3000|4000x3000|4608x3456| 
+|Video resolution|1920x1080 (1080p)|3840x2160(4k)|3840x2160(4k)|3840x2160(4k)|3840x2160(4k)| 
 |FOV|62°|90°|94°|94°|72°| 
 
 *Note: FOV = Field of View* 
