@@ -6,7 +6,7 @@ imagery into 3D point clouds and 2D orthomosaics.
 ## Agisoft Settings
 |Parameter|Setting|Value|
 |---------|-------|-----|
-|Camera Calibration| | |
+|Camera Calibration||on|
 |Rolling Shutter Correction||on|
 |Align Photos|Accuracy|High|
 |Align Photos|Pair preselect| |
@@ -33,6 +33,7 @@ keep the RAM use beneath the available amount.
 |------|----------|------------|------------|-----------|-----------| 
 |Sensor (mm)|Sony EXMOR APS-C (23.5x15.6)|Sony EXMOR 1/2.3" (6.3x4.72)|Sony EXMOR 1/2.3" (6.3x4.72)|Sony EXMOR 1/2.3" (6.3x4.72)|Panasonic Micro 4/3" (17.3x13)| 
 |Effective Sensor Resolution (megapixel)|24.3|12|12|12|16|
+|Lens|35 mm|20mm (35 mm equivalent)|20mm (35 mm equivalent)|20mm (35 mm equivalent)|30 mm|
 |Resolution|6000x4000|4000x3000|4000x3000|4000x3000|4608x3456| 
 |HD Video|1080p|4k|4k|4k|4k| 
 |FOV|62°|90°|94°|94°|72°| 
@@ -46,7 +47,6 @@ keep the RAM use beneath the available amount.
 |ISO|100-1600|100-1600|100-1600|100-1600|100-1600|
 |F-stop|||||||
 Exposure||||||||
-|Focal length|35 mm| | | | | |
 |Focus|1-∞|∞|∞|∞|∞|
 |White Balance|Sun|Sun|Sun|Sun|Sun| 
 |Exposure Metering|Center|Center|Center|Center|Center| 
@@ -64,6 +64,8 @@ The Sony a6000 was flown on the BirdsEyeView Firefly6, the Osmo was carried by h
 |------|----------|------------|------------|-----------|-----------| 
 |Flight Height (*m agl*)|100-120|20-30|20-30|1-3|1-3|
 |Forward speed(*m/s*)|15-18|4|4|1|1|
-|Photo Interval (*s*)|1||||||
+|Forward overlap (%)|80|85|85|>90|>90|
+|Side overlap (%)|~80|85|85|>90|>90|
+|Obliquity (&deg;)|0-15|30|30|20-45|20-45|
 |Estimated pixel size (*mm*)|10|11|11|<1|<1|
 
