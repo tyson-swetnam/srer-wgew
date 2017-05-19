@@ -29,7 +29,7 @@ For the largest sfm model creation (>500 images) chunking of individual flights 
 keep the RAM use beneath the available amount. 
 
 ## Digital Camera Specifications
-|Camera|Sony a6000 w/ Zeiss Sonar \*T 35mm|DJI Phantom3|DJI Phantom4|DJI Osmo x3|DJI Osmo x5|
+|Camera|[Sony a6000 w/ Zeiss Sonar \*T 35mm](http://www.sony.com/electronics/interchangeable-lens-cameras/ilce-6000-body-kit)|[DJI Phantom-3](http://www.dji.com/phantom-3-pro/info)|[DJI Phantom-4](http://www.dji.com/phantom-4/info)|[DJI Zenmuse x3](http://www.dji.com/zenmuse-x3/info)|[DJI Zenmuse x5](http://www.dji.com/zenmuse-x5/info)|
 |------|----------|------------|------------|-----------|-----------| 
 |Sensor (mm)|Sony EXMOR APS-C (23.5x15.6)|Sony EXMOR 1/2.3" (6.3x4.72)|Sony EXMOR 1/2.3" (6.3x4.72)|Sony EXMOR 1/2.3" (6.3x4.72)|Panasonic Micro 4/3" (17.3x13)| 
 |Effective Sensor Resolution (megapixel)|24.3|12|12|12|16|
@@ -41,8 +41,8 @@ keep the RAM use beneath the available amount.
 *Note: FOV = Field of View* 
 
 ## Camera Settings
-|Camera|[Sony a6000](http://www.sony.com/electronics/interchangeable-lens-cameras/ilce-6000-body-kit)|[DJI Phantom-3](http://www.dji.com/phantom-3-pro/info)|[DJI Phantom-4](http://www.dji.com/phantom-4/info)|[DJI Zenmuse x3](http://www.dji.com/zenmuse-x3/info)|[DJI Zenmuse x5](http://www.dji.com/zenmuse-x5/info)|
-|------|----------|------------|------------|-----------|-----------| 
+|Camera|Sony a6000|DJI Phantom-3|DJI Phantom-4|DJI Zenmuse x3|DJI Zenmuse x5|
+|------|----------|-------------|-------------|--------------|--------------| 
 |Format|JPG & RAW|JPG|JPG|JPG|JPG| 
 |ISO|100-1600|100-1600|100-1600|100-1600|100-1600|
 |F-stop|||||||
