@@ -41,7 +41,7 @@ keep the RAM use beneath the available amount.
 *Note: FOV = Field of View* 
 
 ## Camera Settings
-|Camera|Sony a6000|DJI Phantom3|DJI Phantom4|DJI Osmo x3|DJI Osmo x5|
+|Camera|[Sony a6000](http://www.sony.com/electronics/interchangeable-lens-cameras/ilce-6000-body-kit)|[DJI Phantom-3](http://www.dji.com/phantom-3-pro/info)|[DJI Phantom-4](http://www.dji.com/phantom-4/info)|[DJI Zenmuse x3](http://www.dji.com/zenmuse-x3/info)|[DJI Zenmuse x5](http://www.dji.com/zenmuse-x5/info)|
 |------|----------|------------|------------|-----------|-----------| 
 |Format|JPG & RAW|JPG|JPG|JPG|JPG| 
 |ISO|100-1600|100-1600|100-1600|100-1600|100-1600|
@@ -58,9 +58,9 @@ Exposure compensation|0|0|0|0|0|
 
 *agl* = above ground level
 *m/s* = meters per second (forward air speed)
-The Sony a6000 was flown on the BirdsEyeView Firefly6, the Osmo was carried by hand on a 1 meter range pole.
+The Sony a6000 was flown on the [BirdsEyeView Firefly6](https://www.birdseyeview.aero/), the [DJI Osmo](http://www.dji.com/osmo/info) was carried by hand on an extensible 1 meter rod.
 
-|Camera|Sony a6000|DJI Phantom3|DJI Phantom4|DJI Osmo x3|DJI Osmo x5|
+|Camera|Sony a6000|DJI Phantom-3|DJI Phantom-4|DJI Osmo x3|DJI Osmo x5|
 |------|----------|------------|------------|-----------|-----------| 
 |Flight Height (*m agl*)|100-120|20-30|20-30|1-3|1-3|
 |Forward speed(*m/s*)|15-18|4|4|1|1|
