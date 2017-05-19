@@ -39,7 +39,7 @@ For easier point cloud viewing and editing a GPU video card is strongly encourag
 The different point cloud datasets were initially in different [datums and projections](https://github.com/tyson-swetnam/lidar_sfm_data_fusion/blob/master/cloudcompare/Point_Cloud_Alignment.md#aerial-lidar). 
 When these data are loaded for the first time together in CloudCompare 
 the differences in their horizontal and vertical positions are obvious. 
-To align datasets that are offset we used the interactive [Rotation/Translation tool](http://www.cloudcompare.org/doc/wiki/index.php?title=Interactive_Transformation_Tool),[Fine alignment](http://www.cloudcompare.org/doc/wiki/index.php?title=ICP), and [3-point picking](http://www.cloudcompare.org/doc/wiki/index.php?title=Point_picking)
+To align datasets that are offset we used the interactive [Rotation/Translation tool](http://www.cloudcompare.org/doc/wiki/index.php?title=Interactive_Transformation_Tool), [Fine alignment](http://www.cloudcompare.org/doc/wiki/index.php?title=ICP), and [3-point picking](http://www.cloudcompare.org/doc/wiki/index.php?title=Point_picking)
 
 We did not modify the scale of previously generated point clouds (TLS, ALS, sUAS SfM w/ GPS).
 We did modify the scale of SfM generated from the a6000 and DJI Osmos, which did not use geolocation data from the field.
