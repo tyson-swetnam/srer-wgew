@@ -5,7 +5,7 @@ This repository contains quickstart tutorials, brief explanations, and code adde
 |Metadata Table List|
 |-------------------|
 |[Cameras and lenses](https://github.com/tyson-swetnam/lidar_sfm_data_fusion/blob/master/sfm/agisoft_photoscan.md#digital-camera-specifications)|
-|[small Unmanned Aerial Systems (sUAS) platforms]()|
+|[small Unmanned Aerial Systems (sUAS) platforms](https://github.com/tyson-swetnam/lidar_sfm_data_fusion/tree/master/sfm#suas-sfm)|
 |[Aerial lidar point clouds](https://github.com/tyson-swetnam/lidar_sfm_data_fusion/blob/master/cloudcompare/Point_Cloud_Alignment.md#aerial-lidar)|
 |[Terrestrial lidar point clouds](https://github.com/tyson-swetnam/lidar_sfm_data_fusion/blob/master/cloudcompare/Point_Cloud_Alignment.md#terrestrial-laser-scanning)|
 |[sUAS structure from motion (sfm) point clouds](https://github.com/tyson-swetnam/lidar_sfm_data_fusion/blob/master/cloudcompare/Point_Cloud_Alignment.md#suas-sfm)|
