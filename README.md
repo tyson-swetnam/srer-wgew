@@ -1,8 +1,8 @@
 # Contents
 
-## Wiki Home page
+## [Wiki Home page](https://github.com/tyson-swetnam/lidar_sfm_data_fusion/wiki)
 
-Wiki style homepage with links and examples of the repository.
+Wiki style homepage with links and example data within the repository.
 
 ## [/CloudCompare](https://github.com/tyson-swetnam/lidar_sfm_data_fusion/tree/master/cloudcompare)
 
