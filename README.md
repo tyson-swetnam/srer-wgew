@@ -23,7 +23,3 @@ Methods for generating Structure from Motion from sUAS imagery
 ## [/UA HPC](https://github.com/tyson-swetnam/lidar_sfm_data_fusion/tree/master/uahpc)
 
 Methods for setting up a high performance computing (HPC) environment on University of Arizona systems
-
-## [QuickStart.md](https://github.com/tyson-swetnam/lidar_sfm_data_fusion/blob/master/QUICKSTART.md)
-
-Tutorial for getting started using CyVerse
