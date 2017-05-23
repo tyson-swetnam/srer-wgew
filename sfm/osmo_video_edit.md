@@ -2,7 +2,7 @@
 
 Concurrent to the DJI Phantom 3/4 flights I walked along each transect of the study area taking 4k videos using a gimbal stabilized DJI Osmo.
 
-The Osmo was held in near nadir and up to 4 oblique angles to simulate the same collection pattern as the DJI Phantom.
+The Osmo was held overhead approximately nadir and at 4 oblique angles, roughly 25 degrees down and 45 degrees off the path of travel facing in toward the transect. 
 
 The elevation of the Osmo was ~ 2.5 - 3.5 meters above ground level.
 
