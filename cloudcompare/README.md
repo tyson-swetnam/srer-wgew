@@ -2,6 +2,8 @@
 
 In this folder I describe the process of aligning two different point clouds using CloudCompare and measuring their difference in the X, Y, and Z dimensions.
 
+CloudCompare can work with [numerous point cloud formats](http://www.cloudcompare.org/doc/wiki/index.php?title=FILE_I/O) making it ideal for comparing data collected from SfM and lidar.
+
 ## Setting up CloudCompare for the first time
 
 On my Linux (Ubuntu 16.04) workstations I installed [CloudCompare](http://www.cloudcompare.org/) using `snapd`
