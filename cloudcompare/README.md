@@ -27,7 +27,7 @@ $ snap install cloudcompare
 There is a bug in the current LTR version of CC (v2.8.1) so we moved to use the `edge` version 2.9
 
 ```
-$ sudo snap refresh --edge
+$ sudo snap refresh cloudcompare --edge
 ```
 
 In order to access external volumes with the snap install of CloudCompare:
