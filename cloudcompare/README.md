@@ -4,6 +4,8 @@ In this folder I describe the process of aligning two different point clouds usi
 
 CloudCompare can work with [numerous point cloud formats](http://www.cloudcompare.org/doc/wiki/index.php?title=FILE_I/O) making it ideal for comparing data collected from SfM and lidar.
 
+CloudCompare uses parallel tasks for many of its operations, e.g. M3C2. Jetstream's XXL instance with 44 cores was particularly powerful for working with very large point clouds.
+
 ## Setting up CloudCompare for the first time
 
 On my Linux (Ubuntu 16.04) workstations I installed [CloudCompare](http://www.cloudcompare.org/) using `snapd`
@@ -33,3 +35,7 @@ In order to access external volumes with the snap install of CloudCompare:
 ```
 sudo snap connect  cloudcompare:removable-media  :removable-media
 ```
+
+## Commandline  
+
+CloudComapre can also be used from the [command line](http://www.cloudcompare.org/doc/wiki/index.php?title=Command_line_mode)
