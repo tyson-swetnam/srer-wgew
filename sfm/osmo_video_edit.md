@@ -61,3 +61,8 @@ We do not need to extract all 24 frames per second of film. The rate of frame ex
 I use `%03d` to add the number of images, here I am trying to keep my images under 1,000 per video.
 
 `-qscale:v 2` renders the highest quality `.jpg`
+
+## Editing exported .jpg EXIF 
+
+I wanted to add the camera information from the Sony a6000 back into the exported .jpgs created by FFmpeg. 
+
