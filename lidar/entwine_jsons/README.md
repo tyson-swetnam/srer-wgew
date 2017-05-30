@@ -1,4 +1,4 @@
-# Entwine for Potree and Cesium Tiles 
+$# Entwine for Potree and Cesium Tiles 
 
 Run scripts as `root` or change ownership of the docker runs
 
@@ -6,7 +6,7 @@ Run scripts as `root` or change ownership of the docker runs
 sudo su
 ```
 
-# Create folder ~/entwine
+## Create folder ~/entwine
 
 ```
 mkdir ~/entwine
@@ -21,7 +21,7 @@ docker run -it -v ${PWD}:/data connormanning/entwine build \
 -o ~/entwine/lidar_output
 ```
 
-# Starts greyhound on port 8080 
+## Start Greyhound
 
 ```
 docker run -it -v ~/entwine:/entwine \
@@ -32,9 +32,23 @@ Open a new browser window and connect using either:
 
 Speck.ly: http://speck.ly/?s=http://<remotehost>:8080/&r=lidar_output
 
-# Large Entwine runs
+## Large Entwine runs
 
 ```
-sudo docker run -v /vol_b/4fri/phase1:/data connormanning/entwine build -t 44 -i /data/**/* -o ~/entwine/4fri_phase1
+docker run -v /vol_b/4fri/phase1:/data \
+connormanning/entwine build -t 44 \
+-i /data/**/* \
+-o ~/entwine/4fri_phase1
+```
 
+## Detached sessions
+
+```
+docker run -d --name entwine connormanning/entwine build ...
+```
+
+View log file
+
+```
+docker logs entwine -f
 ```
