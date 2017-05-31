@@ -3,6 +3,8 @@
 We used Agisoft Photoscan v1.3 ([Agisoft 2016](http://www.agisoft.com/)) to process our aerial
 imagery into 3D point clouds and 2D orthomosaics.
 
+[UNAVCO guide to using Agisoft Photoscan v1.2](http://kb.unavco.org/kb/file.php?id=781) - this link downloads a PDF.
+
 ## Agisoft Settings
 
 We used the highest quality settings for generating our point clouds.
