@@ -31,24 +31,6 @@ For the sUAS imagery from the Sensefly eBee we processed the data using the 'mul
 
 The models used the settings mentioned above for their dense point cloud generation
 
-## DJI Phantom 3/4
-
-The DJI Phantom was flown using [Altizure](https://www.altizure.com/) mission planning software. the Phantom GPS was used for initially geolocating the imagery in Agisoft. After the sparse point cloud was generated a ground control point file, generated from the Trimble RTK-GPS was used to geolocate the coordinates on the ground. 
-
-The sUAS flew 20-25 m above ground level yielding spatial resolution of 8-10 mm and image footprints of 31 m x 23 m The flight parameters.
-
-|Parameters|scalars|
-|----------|-------|
-|Forward lap|75 %|
-|Side lap|80 %|
-|Speed| 4-5 m/s|
-|Oblique angle|30-43%|
-|Mission times| 7-10 minutes |
-|Missions per plot|5|
-|Flight time per plot|15-20|
-|Battery reserve|20-25|
-
-
 ## DJI Osmo Zenmuse x3/x5
 
 4k videos were shot with the Osmo facing nadir, forward, and lateral oblique angles along transects in the SRER. 
