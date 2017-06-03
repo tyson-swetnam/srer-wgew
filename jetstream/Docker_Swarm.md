@@ -13,18 +13,18 @@ for the VM on the subnet that Docker Swarm will use to communicate with the othe
 ifconfig
 ```
 
-The correct `inet addr:` is listed in `docker0` 
+The correct `inet addr:` is listed in `eth0`, NOT in `docker0` or `lo`
 
 This VM is going to be designated as the Swarm Manager because it is the first one started.
 
 ```
- sudo docker swarm init --listen-addr 172.17.0.1:2377
+ sudo docker swarm init --listen-addr 172.21.50.7:2377
 ```
 
 The output should look something like this:
 
 ```
-tswetnam@js-157-25:~$ sudo docker swarm init --listen-addr 172.17.0.1:2377
+tswetnam@js-157-25:~$ sudo docker swarm init --listen-addr 172.21.50.7:2377
 Swarm initialized: current node (863bo4r89irjsautfl7neyya1) is now a manager.
 
 To add a worker to this swarm, run the following command:
