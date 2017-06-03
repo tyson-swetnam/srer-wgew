@@ -1,10 +1,10 @@
-# Swarm
+# Building a Swarm
 
 I wanted to test out processing lidar data using Docker Swarm mode on Jetstream.
 
 [YouTube video on Docker Swarms](https://www.youtube.com/watch?v=KC4Ad1DS8xU)
 
-To start, I fired up a half dozen single core VMs with Docker v1.12+ on Jetstream
+To start, I fired up a half dozen VMs with [Ubuntu 14.04 Docker CE on Jetstream](https://use.jetstream-cloud.org/application/images/359)
 
 After I `ssh` into the first VM I found the `inet addr:` internal IP address 
 for the VM on the subnet that Docker Swarm will use to communicate with the other VMS
@@ -18,13 +18,13 @@ The correct `inet addr:` is listed in `eth0`, NOT in `docker0` or `lo`
 This VM is going to be designated as the Swarm Manager because it is the first one started.
 
 ```
- sudo docker swarm init --listen-addr 172.21.50.7:2377
+docker swarm init --listen-addr 172.21.50.7:2377
 ```
 
 The output should look something like this:
 
 ```
-tswetnam@js-157-25:~$ sudo docker swarm init --listen-addr 172.21.50.7:2377
+tswetnam@js-157-25:~$docker swarm init --listen-addr 172.21.50.7:2377
 Swarm initialized: current node (863bo4r89irjsautfl7neyya1) is now a manager.
 
 To add a worker to this swarm, run the following command:
@@ -47,13 +47,14 @@ sudo docker node ls
 Now, `ssh` into your second VM on the same subnet (e.g. IU or TACC) and start a second node using 
 
 ```
-sudo docker swarm join \
+docker swarm join \
     --token SWMTKN-1-0gcqhl826piyork0crxapoodasmiqx5ptetwd8upa09l0kuv0f-4voz9apc7uakcr0hiybzc6ujz \
     172.21.50.7:2377
 ```
 
+## Running a Python script with Swarm
 
-Here's my test of setting up a Docker Swarm in Jetstream
+Here's my test of setting up a Docker Swarm in Jetstream. I'm working from a [blog post](https://medium.com/@mbaker/horizontally-scaling-gis-python-analysis-with-docker-65eedf3d75ef) which detailed the code first:
 
 ```
 #!/usr/local/bin/python
