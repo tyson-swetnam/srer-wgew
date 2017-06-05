@@ -1,6 +1,6 @@
 # University of Arizona HPC systems
 
-You must have a valid UA NetID
+You must have a valid UA NetID and have registered for an HPC account with [UA Services](https://account.arizona.edu/welcome)
 
 # Auth
 
