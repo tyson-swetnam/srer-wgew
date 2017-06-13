@@ -5,6 +5,10 @@ imagery into 3D point clouds and 2D orthomosaics.
 
 [UNAVCO guide to using Agisoft Photoscan v1.2](http://kb.unavco.org/kb/file.php?id=781) - this link downloads a PDF.
 
+## Python scripting
+
+http://wiki.agisoft.com/wiki/Python
+
 ## Agisoft Settings
 
 We used the highest quality settings for generating our point clouds.
