@@ -7,12 +7,12 @@ You must have a valid UA NetID and have registered for an HPC account with [UA S
 Open a terminal window and `ssh`
 
 ```
-ssh uid@hpc.arizona.edu
+ssh -Y uid@hpc.arizona.edu
 ```
 To use an interactive window you need to use the `-X` or `-Y` command
 
 ```
-ssh -X uidm@hpc.arizona.edu
+ssh -Y uidm@hpc.arizona.edu
 ```
 ## Starting jobs on UA HPC El Gato
 
@@ -43,8 +43,38 @@ You will have to enter your password and DUO security one last time. You will se
 Now go ahead and log back in using your user id name
 
 ```
-ssh uid@hpc.arizona.edu
+ssh -Y uid@hpc.arizona.edu
 ```
+
+## Navigating the Bastion
+
+Logging into UA HPC you will land at the bastion where you must choose a system
+
+```
+This is a bastion host used to access the rest of the environment.
+
+Shortcut commands to access each resource
+-----------------------------------------
+Ocelote:                El Gato:                Cluster(ICE)/HTC/SMP:
+$ ocelote               $ elgato                $ ice
+```
+
+Select the system you wish to run Photoscan from
+
+```
+elgato -Y
+```
+
+## Starting a remote X11 instance
+
+Make sure you have an X11 service installed on your localhost
+
+Set the display on the local host
+
+```
+export DISPLAY=localhost:0.0
+```
+
 
 ### [Photoscan]()
 
