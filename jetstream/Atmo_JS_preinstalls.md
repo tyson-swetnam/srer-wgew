@@ -127,3 +127,9 @@ $ wget https://download2.rstudio.org/rstudio-server-1.0.136-amd64.deb
 $ sudo gdebi rstudio-server-1.0.136-amd64.deb
 
 ```
+
+## Install [`Snapd`]()
+
+```
+sudo apt-get -y install snap snapd pulseaudio
+```
