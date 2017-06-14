@@ -76,14 +76,14 @@ export DISPLAY=localhost:0.0
 ```
 
 
-### [Photoscan]()
+### [Agisoft Photoscan](www.agisoft.com)
 
 First you need to download a copy of the latest photoscan onto your `home/user` or shared directory
 
 ```
-wget http://download.agisoft.com/photoscan-pro_1_3_1_amd64.tar.gz
-tar -xvzf photoscan-pro_1_3_1_amd64.tar.gz
-rm photoscan-pro_1_3_1_amd64.tar.gz
+wget http://download.agisoft.com/photoscan-pro_1_3_2_amd64.tar.gz
+tar -xvzf photoscan-pro_1_3_2_amd64.tar.gz
+rm photoscan-pro_1_3_2_amd64.tar.gz
 ```
 
 Start Photoscan as server
