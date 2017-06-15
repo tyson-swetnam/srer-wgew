@@ -94,3 +94,79 @@ drive ls
 ```
 drive pull your/google/drive/folders/here
 ```
+
+## Using Drive on UA HPC
+
+Drive is currently available on the ElGato login node 
+
+Load `go` and `drive`
+
+```
+module load go
+module load drive
+```
+
+Create a directory where you want to initiate `drive` - preferrably on your `/xdisk/`
+
+```
+cd /xdisk/uid/
+mkdir gdrive
+```
+
+Initiate the drive
+
+```
+drive init /xdisk/uid/gdrive
+```
+
+You will get a request to `Visit this URL to get an authorization code` with a link to a long `https://accounts.google.com/o/oauth2/xxxx` URL - copy paste that link into your preferred browser.
+
+You will be taken to a Google login page, type in your email address (uid@email.arizona.edu) and password. 
+
+Copy/Paste the code provided by Google back in your Terminal window where prompted: `Paste the authorization code:`
+
+Now, check to see if your `drive.google.com` acount is active:
+
+```
+drive ls
+```
+A list of the directories in your `drive.google.com` account should be listed, e.g.
+
+```
+/project1
+/project2
+/reports1
+/pictures1
+```
+
+You can `pull` files or directories from your `drive.google.com` now using commands like:
+
+```
+drive pull project1/subfolder/
+```
+You will see:
+
+```
+Resolving...
+```
+followed by a spinning `\` `|` `/` `-` set of symbols
+
+The folder contents will be displayed:
+
+```
+ /project1/subfolder/file1.csv
+...
++ /project1/subfolder/file955.csv
++ /project1/subfolder/file966.csv
+Addition count 966 src: 5.02GB
+Proceed with the changes? [Y/n]:
+```
+
+Select `y` and the download will proceed.
+
+Typical speeds are between 10 and 50 Mb/s.
+
+```
+Proceed with the changes? [Y/n]:y
+ 5392682146 / 5392682146 [==========================================================================================================================] 100.00% 1m55s
+```
