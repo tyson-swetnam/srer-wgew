@@ -1,40 +1,20 @@
-# Jetstream Images
+# Atmosphere and Jetstream Images
 
-For analyzing the sfm point clouds I created several custom images on Jetstream and Atmosphere.
+It is suggested you use `featured` Ubuntu images rather than Centos on [Atmosphere](https://atmo.cyverse.org) and [Jetstream](https://use.jetstream-cloud.org/application/images). This is because most of the software used in this project are developed for Ubuntu Linux rather than RHEL.
 
-### Ubuntu + Docker CE
-The first image is a Jetstream [base Ubuntu 14.04 development XCFE GUI image with iRODS](https://use.jetstream-cloud.org/application/images/54)
-to which I've added Docker CE and Docker-Compose
+#### Installing Docker
 
-This base image can be used with any other software which has been deployed in Docker.
+Installation of Docker can use the Docker [Linux instruction](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/) or the [CyVerse EZ method](https://cyverse-ez-quickstart.readthedocs-hosted.com/en/latest/).
 
-[Ubuntu dev w/ Docker and Docker-Compose](https://use.jetstream-cloud.org/application/images/359)
-minimum size: small 2-core, 4GB RAM.
-
-#### Running Docker
-
-To install any Docker containers simply use the standard `docker pull` command.
-
-```
-docker pull pdal/pdal:1.5
-```
-
-### Ubuntu + OSGEO
-
-The second image is the same base with [Ubuntu 14.04 with GDAL 2.1 and GRASS 7.2](https://use.jetstream-cloud.org/application/images/330) 
-built from source, minimum size: small 2-core, 4GB RAM.
-
-This base image can be used with QGIS.
+To install Docker in a featured Atmosphere or Jetstream image, type `ezd` from the instance WebShell or terminal.
 
 #### Installing QGIS
 
-### R + RStudio
+QGIS can be run with Docker using the [Kartoza group QGIS containers](https://github.com/kartoza/docker-qgis-desktop)
 
-There are already several Jetstream images available which have R compiled on them.
+GDAL, GRASS, and QGIS can also be installed on Ubuntu instances using the [Linux installation instructions](http://www.qgis.org/en/site/forusers/alldownloads.html#linux).
 
-```
-sudo apt-get update
-sudo apt-get install r-base 
-```
+#### Installing R + RStudio
 
+Installation of R can use the [Linux instruction](https://www.r-bloggers.com/how-to-install-r-on-linux-ubuntu-16-04-xenial-xerus/) or on featured Atmosphere and Jetstream images the [CyVerse EZ method](https://cyverse-ez-quickstart.readthedocs-hosted.com/en/latest/).
 
