@@ -15,6 +15,26 @@ downloading a large number of images as .zip files from the Google.drive can be 
 To get around these problems we can use 3rd party applications like [`drive`](https://github.com/odeke-em/drive) a command line client 
 written in Google's own `go` language.
 
+## FUSE client `ocamfluse`
+
+[`google-drive-ocamlfuse`](https://github.com/astrada/google-drive-ocamlfuse) is a Google Drive Client written in OCaml.
+
+It can mount your google drive as a folder visible in the file tree. FUSE is slower than other methods like iRODS or `Drive`, but allows for GUI based drag and drop transfers.
+
+```
+sudo add-apt-repository ppa:alessandro-strada/ppa
+sudo apt-get update
+sudo apt-get install google-drive-ocamlfuse
+```
+
+```
+mkdir ~/googledrive
+```
+
+```
+google-drive-ocamlfuse ~/googledrive
+```
+
 ## Install `Go` 
 
 Drive uses the `go` language. In order to work with it you need to [install `go`](https://golang.org/doc/install) onto the VM.
