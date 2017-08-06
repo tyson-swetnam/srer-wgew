@@ -17,7 +17,7 @@ written in Google's own `go` language.
 
 ## FUSE client `ocamfluse`
 
-[`google-drive-ocamlfuse`](https://github.com/astrada/google-drive-ocamlfuse) is a Google Drive Client written in OCaml.
+[`google-drive-ocamlfuse`](https://github.com/astrada/google-drive-ocamlfuse) is a Google Drive Client written in OCaml. This is tested for Ubuntu systems.
 
 It can mount your google drive as a folder visible in the file tree. FUSE is slower than other methods like iRODS or `Drive`, but allows for GUI based drag and drop transfers.
 
@@ -27,13 +27,24 @@ sudo apt-get update
 sudo apt-get install google-drive-ocamlfuse
 ```
 
+Run the app the first time to get the authentication certificate from Google
+
+```
+google-drive-ocamlfuse
+```
+
+Create a folder:
+
 ```
 mkdir ~/googledrive
 ```
+Mount the new googledrive
 
 ```
 google-drive-ocamlfuse ~/googledrive
 ```
+
+Open in your favorite file explorer. 
 
 ## Install `Go` 
 
