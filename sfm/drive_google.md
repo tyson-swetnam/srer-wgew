@@ -1,19 +1,21 @@
-# Getting files from your Drive.Google into a Jetstream VM
+# Getting files from your Drive.Google into an Atmosphere or Jetstream VM
 
 In the US, academic institutions have increasingly established email accounts through Google.
-Some institutions have unlimited [Drive](https://drive.google.com) storage 
-as a service for faculty and students, as was the case for our study.
+Some institutions have unlimited storage on [Drive](https://drive.google.com)
+as a service for faculty and students.
 
 One of the issues with uploading / downloading a large number of images to or from a Drive 
-account through the web browser (i.e. Google's Chrome) is the limit to the number of files, 
-the speed of the uploads, and the size of the downloads. Typically a download directly from a 
-Drive account through Chrome is limited to <2Gb and is zipped by Google before starting.
+account through the web browser (Chrome or Firefox) is the number of files allowed, 
+the speed of the uploads, and the size of the downloads.
 
-While the browser can work well for uploading a large number sUAS images fro ma collection,
-downloading a large number of images as .zip files from the Google.drive can be tiresome and difficult.
+Typically a download directly from a Drive account through Chrome is limited to <2Gb 
+and is zipped by Google before starting.
 
-To get around these problems we can use 3rd party applications like [`drive`](https://github.com/odeke-em/drive) a command line client 
-written in Google's own `go` language.
+While the browser can work well for easily uploading a large number sUAS images from a collection,
+downloading the images as .zip files from the Google.drive can become tiresome and difficult.
+
+To get around these problems we can use 3rd party applications like FUSE and
+[`drive`](https://github.com/odeke-em/drive).
 
 ## FUSE client `ocamfluse`
 
