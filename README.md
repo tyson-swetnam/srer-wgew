@@ -8,18 +8,18 @@ Wiki style homepage with links and example data within the repository.
 
 Methods for using CloudCompare to analyze point clouds
 
-## [/Jetstream](https://github.com/tyson-swetnam/lidar_sfm_data_fusion/tree/master/jetstream)
+## [/Jetstream](jetstream)
 
 Methods for using Jetstream cloud computing to do analyses
 
-## [/Lidar](https://github.com/tyson-swetnam/lidar_sfm_data_fusion/tree/master/lidar)
+## [/Lidar](lidar)
 
 Methods for analyzing aerial and terrestrial lidar data
 
-## [/SfM](https://github.com/tyson-swetnam/lidar_sfm_data_fusion/tree/master/sfm)
+## [/SfM](sfm)
 
 Methods for generating Structure from Motion from sUAS imagery
 
-## [/UA HPC](https://github.com/tyson-swetnam/lidar_sfm_data_fusion/tree/master/uahpc)
+## [/UA HPC](uahpc)
 
 Methods for setting up a high performance computing (HPC) environment on University of Arizona systems
