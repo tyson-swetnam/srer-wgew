@@ -1,10 +1,10 @@
 # Contents
 
-## [Wiki Home page](https://github.com/tyson-swetnam/lidar_sfm_data_fusion/wiki)
+## [Wiki Home page](wiki)
 
 Wiki style homepage with links and example data within the repository.
 
-## [/CloudCompare](https://github.com/tyson-swetnam/lidar_sfm_data_fusion/tree/master/cloudcompare)
+## [/CloudCompare](cloudcompare)
 
 Methods for using CloudCompare to analyze point clouds
 
