@@ -23,9 +23,9 @@ A celebratory screen should appear. Set up your user_name and password.
 
 If your images are hosted on CyVerse DataStore, you can use [iCommands](https://pods.iplantcollaborative.org/wiki/display/DS/Setting+Up+iCommands) to transfer them onto the VM, or you can use a [FUSE mount to your DataStore](https://pods.iplantcollaborative.org/wiki/display/DS/Using+FUSE+to+Mount+the+CyVerse+Data+Store).
 
-If you are using another service, like Google Drive, a FUSE mount called `ocamlfuse` can be established. [Setup instructions here](/sfm/drive_google.md#fuse-client-ocamfluse)
+If you are using another service, like Google Drive, a FUSE mount called `ocamlfuse` can be established. [Setup instructions here](drive_google.md#fuse-client-ocamfluse)
 
-Or you can move your data onto the VM using a third party app like `Drive` using the Go language. [Setup instructions here](sfm/drive_google.md#install-go)
+Or you can move your data onto the VM using a third party app like `Drive` using the Go language. [Setup instructions here](drive_google.md#install-go)
 
 ### Worker nodes for WebODM
 
