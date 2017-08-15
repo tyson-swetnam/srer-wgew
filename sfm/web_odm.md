@@ -21,6 +21,12 @@ You log into the WebODM instance by typing your IP address and port `:8000`
 
 A celebratory screen should appear. Set up your user_name and password.
 
+If your images are hosted on CyVerse DataStore, you can use [iCommands](https://pods.iplantcollaborative.org/wiki/display/DS/Setting+Up+iCommands) to transfer them onto the VM, or you can use a [FUSE mount to your DataStore](https://pods.iplantcollaborative.org/wiki/display/DS/Using+FUSE+to+Mount+the+CyVerse+Data+Store).
+
+If you are using another service, like Google Drive, a FUSE mount called `ocamlfuse` can be established. [Setup instructions here](/sfm/drive_google.md#fuse-client-ocamfluse)
+
+Or you can move your data onto the VM using a third party app like `Drive` using the Go language. [Setup instructions here](sfm/drive_google.md#install-go)
+
 ### Worker nodes for WebODM
 
 WebODM can distribute jobs to multiple nodes. It is not advised to connect VMs from different locations, e.g. a head node running in Tucson with the worker node running in Indiana. Doing so will greatly slow transfer of data, and possibly result in failed jobs.
