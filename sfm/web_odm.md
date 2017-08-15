@@ -4,8 +4,10 @@ We installed [Web OpenDroneMap(ODM)](https://github.com/OpenDroneMap/WebODM)
 onto a [base Ubuntu image w/ Docker CE](https://use.jetstream-cloud.org/application/images/359) on Jetstream.
 
 WebODM can utilize additional nodes as workers for multiple project processing. 
-On Jetstream we used large (10 core, 30 GB RAM), xlarge (24 core, 60 GB RAM), 
-and xxlarge (44 core, 120 GB RAM) size instances as our worker nodes.
+
+For processing large jobs on Jetstream we used xlarge (24 core, 60GB RAM), and xxlarge (44 core, 120GB RAM) size instances as our worker nodes. On Atmosphere we used an Xlarge3 instance (16 core, 128GB RAM). In both cases we went with Ubuntu 14.04 or 16.04.
+
+We also use the `ezd` command to install Docker CE. Instructions available from [CyVerse Learning Center](https://cyverse-ez-quickstart.readthedocs-hosted.com/en/latest/index.html)
 
 We followed the standard installation procedures for WebODM through Docker
 
@@ -17,14 +19,13 @@ cd WebODM
 
 You log into the WebODM instance by typing your IP address and port `:8000`
 
-The initial login is `admin`
-
-and password `admin`
+A celebratory screen should appear. Set up your user_name and password.
 
 ### Worker nodes for WebODM
 
-Worker nodes were started on additional VMs after installing WebODM
-using the [node-ODM](https://github.com/OpenDroneMap/node-OpenDroneMap)
+WebODM can distribute jobs to multiple nodes. It is not advised to connect VMs from different locations, e.g. a head node running in Tucson with the worker node running in Indiana. Doing so will greatly slow transfer of data, and possibly result in failed jobs.
+
+Worker nodes were started using the [node-ODM](https://github.com/OpenDroneMap/node-OpenDroneMap) instructions for Docker:
 
 ```
 docker run -p 3000:3000 opendronemap/node-opendronemap
@@ -32,7 +33,7 @@ docker run -p 3000:3000 opendronemap/node-opendronemap
 
 ## ODM orthomosaic and point cloud creation settings.
 
-Unlike Agisoft Photoscan, [OpenDroneMap](https://github.com/OpenDroneMap/OpenDroneMap/wiki/Process-Breakdown) uses open-source sfm-mvs.
+[OpenDroneMap](https://github.com/OpenDroneMap/OpenDroneMap/wiki/Process-Breakdown) uses the open-source sfm-mvs.
 
 [PMVS Parameter](http://www.di.ens.fr/pmvs/documentation.html) settings are exposed in the Dashboard 
 
