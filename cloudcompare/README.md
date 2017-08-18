@@ -38,4 +38,4 @@ sudo snap connect  cloudcompare:removable-media  :removable-media
 
 ## Commandline  
 
-CloudComapre can also be used from the [command line](http://www.cloudcompare.org/doc/wiki/index.php?title=Command_line_mode)
+CloudCompare can also be used from the [command line](http://www.cloudcompare.org/doc/wiki/index.php?title=Command_line_mode)
