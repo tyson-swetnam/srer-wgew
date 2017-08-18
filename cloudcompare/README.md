@@ -1,16 +1,23 @@
 # CloudCompare
 
-In this folder I describe the process of aligning two different point clouds using CloudCompare and measuring their difference in the X, Y, and Z dimensions.
-
 CloudCompare can work with [numerous point cloud formats](http://www.cloudcompare.org/doc/wiki/index.php?title=FILE_I/O) making it ideal for comparing data collected from SfM and lidar.
 
 CloudCompare uses parallel tasks for many of its operations, e.g. M3C2. Jetstream's XXL instance with 44 cores was particularly powerful for working with very large point clouds.
 
 ## Setting up CloudCompare for the first time
 
-On my Linux (Ubuntu 16.04) workstations I installed [CloudCompare](http://www.cloudcompare.org/) using `snapd`
+On my Linux (Ubuntu 16.04) workstation I installed [CloudCompare](http://www.cloudcompare.org/) using `snapd`
 
-I also installed CloudCompare on Windows and Mac OS X laptops using those OS installation packages.
+To use the `install_cloudcompare.sh` file associated with this folder, copy the file to a local directory, change the permissions on the file, and run:
+
+```
+chmod +x install_cloudcompare.sh
+
+./install_cloudcompare.sh
+
+```
+
+You can also install CloudCompare on Windows or Mac OS X using those [OS installation packages](http://www.cloudcompare.org/release/index.html).
 
 ### Install [Snapd](https://snapcraft.io/docs/core/install)
 
