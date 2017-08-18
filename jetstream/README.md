@@ -18,3 +18,15 @@ GDAL, GRASS, and QGIS can also be installed on Ubuntu instances using the [Linux
 
 Installation of R can use the [Linux instruction](https://www.r-bloggers.com/how-to-install-r-on-linux-ubuntu-16-04-xenial-xerus/) or on featured Atmosphere and Jetstream images the [CyVerse EZ method](https://cyverse-ez-quickstart.readthedocs-hosted.com/en/latest/).
 
+#### Installing QGIS
+
+Installation of QGIS can be done using the `install_r_rstudio_qgis.sh` file in this directory. The script provisions multiple spatial analysis tool kits including GDAL, GRASS, QGIS, RStudio, and spatial Python with Conda.
+
+To install the software on Linux Ubuntu Xenial, copy the file to a local directory, change the permissions on the file and execute:
+
+```
+chmod +x install_r_rstudio_qgis.sh
+
+./install_r_rstudio_qgis.sh
+
+```
