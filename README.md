@@ -1,6 +1,6 @@
 # Contents
 
-## [Wiki Home page](wiki)
+## [Wiki Home page](https://github.com/tyson-swetnam/srer-wgew/wiki)
 
 Wiki style homepage with links and example data within the repository.
 
