@@ -69,4 +69,4 @@ We are running the `--devmode` because of an issue with an unsigned signature
 sudo snap install --devmode cloudcompare_2.9.0-beta_amd64.snap
 ```
 
-Need to determine how to bulid `Liblas` on linux to use `.laz` files
+Need to determine how to build with `Liblas` on linux to use `.laz` files
