@@ -46,3 +46,27 @@ sudo snap connect  cloudcompare:removable-media  :removable-media
 ## Commandline  
 
 CloudCompare can also be used from the [command line](http://www.cloudcompare.org/doc/wiki/index.php?title=Command_line_mode)
+
+## CloudCompare on Atmosphere
+
+Copy the CloudCompare Github repo to the virtual machine instance
+
+```
+git clone https://github.com/CloudCompare/CloudCompare.git
+```
+
+Run the Snap deploy script
+
+```
+sudo ./scripts/linux/snap_deploy.sh $(pwd)
+```
+
+Install CloudCompare using `snap`
+
+We are running the `--devmode` because of an issue with an unsigned signature
+
+```
+sudo snap install --devmode cloudcompare_2.9.0-beta_amd64.snap
+```
+
+Need to determine how to bulid `Liblas` on linux to use `.laz` files
