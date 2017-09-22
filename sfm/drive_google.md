@@ -59,24 +59,21 @@ sudo apt-get -y autoremove gccgo-go
 ```
 
 ```
-$ wget https://storage.googleapis.com/golang/go1.8.1.linux-amd64.tar.gz
-```
-
-```
-$ sudo tar -C /usr/local -xzf go1.8.1.linux-amd64.tar.gz
+wget https://storage.googleapis.com/golang/go1.8.1.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.8.1.linux-amd64.tar.gz
 ```
 
 In `/etc/profile` add: `export PATH=$PATH:/usr/local/go/bin`
 
+```
+cat << ! >> /etc/profile
+export PATH=$PATH:/usr/local/go/bin
+!
+```
+
 In `~/.bashrc` - `sudo nano ~/.bashrc`
 
-add to the end of the file:  
-```
-export GOPATH=$HOME/go
-export PATH=$GOPATH:$GOPATH/bin:$PATH
-```
-
-Or Add the GOPATH directly from terminal:
+Add the GOPATH directly from terminal:
 
 ```
 cat << ! >> ~/.bashrc
@@ -84,8 +81,11 @@ export GOPATH=\$HOME/go
 export PATH=\$GOPATH:\$GOPATH/bin:\$PATH
 !
 ```
+
+Source the new `~/.bashrc` close the terminal and reopen
+
 ```
-source ~/.bashrc # To reload the settings and get the newly set ones # Or open a fresh terminal
+source ~/.bashrc 
 ```
 
 
