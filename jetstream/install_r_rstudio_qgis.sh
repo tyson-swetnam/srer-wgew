@@ -66,10 +66,10 @@ sudo apt-get install libv8-dev -y
 
 echo "edit the sources file to prepare to install R"
 # see http://cran.r-project.org/bin/linux/ubuntu/README
-sudo sh -c 'echo "deb http://cran.rstudio.com/bin/linux/ubuntu xenial/" >> /etc/apt/sources.list' # I'm using Lubuntu
+sudo sh -c 'echo "deb http://cran.rstudio.com/bin/linux/ubuntu xenial/" >> /etc/apt/sources.list' 
 
 echo "get keys to install R"
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9 # # I'm using Lubuntu
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9 
 
 echo "install R and some helpers"
 sudo apt-get update
