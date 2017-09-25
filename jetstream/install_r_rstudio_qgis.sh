@@ -21,7 +21,7 @@ sudo sh -c 'echo "deb-src http://qgis.org/debian xenial main " >> /etc/apt/sourc
 wget -O - http://qgis.org/downloads/qgis-2016.gpg.key | gpg --import
 gpg --fingerprint 073D307A618E5811
 gpg --export --armor 073D307A618E5811 | sudo apt-key add -
-sudo apt-get update && sudo apt-get install -y qgis python-qgis  
+sudo apt-get update && sudo apt-get install -y --allow-unauthenticated qgis python-qgis  
 
 echo deb https://josm.openstreetmap.de/apt alldist universe | sudo tee /etc/apt/sources.list.d/josm.list > /dev/null
 wget -q https://josm.openstreetmap.de/josm-apt.key -O- | sudo apt-key add -
