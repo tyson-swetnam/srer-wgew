@@ -25,6 +25,8 @@ It can mount your google drive as a folder visible in the file tree. FUSE is slo
 
 ```
 sudo add-apt-repository ppa:alessandro-strada/ppa
+```
+```
 sudo apt-get update
 sudo apt-get install google-drive-ocamlfuse
 ```
