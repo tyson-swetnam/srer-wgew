@@ -3,6 +3,8 @@
 We used Agisoft Photoscan v1.3 ([Agisoft 2016](http://www.agisoft.com/)) to process our aerial
 imagery into 3D point clouds and 2D orthomosaics.
 
+We used: (1) a dual core Intel XEON workstation (32 logical cores) with 256 GB RAM and two NVIDIA GTX1080 graphic processing units (GPU) and (2) single physical core Intel i7 workstation (16 logical cores) with 128 GB RAM and two NVIDIA GTX1080 GPUs for processing SfM in Agisoft Photoscan.
+
 [UNAVCO guide to using Agisoft Photoscan v1.2](http://kb.unavco.org/kb/file.php?id=781) - this link downloads a PDF.
 
 ## Python scripting
