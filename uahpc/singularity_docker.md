@@ -13,7 +13,7 @@ ssh-keygen
 After you've created the key you can use your pub key `~/.ssh/id_rsa.pub` to go ahead and ssh into the UA HPC
 
 ```
-cat ~/.ssh/id_rsa.pub | ssh userid@hpc.arizona.edu "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
+cat ~/.ssh/id_rsa.pub | ssh ${USER}@hpc.arizona.edu "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
 ```
 
 You will have to enter your password and DUO security one last time. You will see that you're not logged into the HPC after this process completes.
@@ -21,7 +21,7 @@ You will have to enter your password and DUO security one last time. You will se
 Now go ahead and log back in using your user id name
 
 ```
-ssh userid@hpc.arizona.edu
+ssh ${USER}@hpc.arizona.edu
 ```
 
 ### Request 1 node on Ocelote
@@ -29,7 +29,7 @@ ssh userid@hpc.arizona.edu
 To start a job on Ocelote I can use a basic `qsub`, e.g.
 
 ```
-$ qsub -I -N job_name -m bea -M userid@email.arizona.edu \
+$ qsub -I -N job_name -m bea -M ${USER}@email.arizona.edu \
   -W group_list=group_name -q standard -l select=1:ncpus=28:mem=168gb \
   -l cput=28:0:0 -l walltime=1:0:0
 ```
@@ -80,7 +80,7 @@ singularity shell -B /xdisk/tswetnam:/mnt docker://connormanning/entwine:latest
 Within Entwine container:
 
 ```
-entwine build /
--i <filename/folder> /
+entwine build \
+-i <filename/folder> \
 -o <output directory>
 ```
