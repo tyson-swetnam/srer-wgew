@@ -2,18 +2,33 @@
 
 You must have a valid UA NetID and have registered for an HPC account with [UA Services](https://account.arizona.edu/welcome)
 
-# Auth
+# Logging in
 
-Open a terminal window and `ssh`
-
-```
-ssh -Y uid@hpc.arizona.edu
-```
-To use an interactive window you need to use the `-X` or `-Y` command
+Open a terminal window and `ssh` into the HPC:
 
 ```
-ssh -Y uidm@hpc.arizona.edu
+ssh ${USER}@hpc.arizona.edu
 ```
+
+To use an interactive window you need to use the `-X` or `-Y` command:
+
+```
+ssh -Y ${USER}@hpc.arizona.edu
+```
+You will be prompted for your University of Arizona password and then a Dual Factor Authentication.
+
+After you're logged into the system you will be on the Bastion with options for which machine to log into:
+
+```
+This is a bastion host used to access the rest of the environment.
+
+Shortcut commands to access each resource
+-----------------------------------------
+Ocelote:                El Gato:                Cluster(ICE)/HTC/SMP:
+$ ocelote               $ elgato                $ ice
+
+```
+
 ## Starting jobs on UA HPC El Gato
 
 El Gato uses `LSF` for its job submissions
@@ -23,6 +38,13 @@ Attached are several `bsub` scripts for running jobs on El Gato
 ## Starting jobs on UA HPC Ocelote
 
 Ocelote uses PBS to manage jobs. [UA HPC Manual wiki](https://confluence.arizona.edu/display/UAHPC/Training)
+
+A basic job submission script looks like this:
+
+```
+qsub -I -N ${USER}_singularity_worker -m bea -M ${USER}@email.arizona.edu -W group_list=${USER} -q standard -l select=1:ncpus=28:mem=168gb -l cput=1344:0:0 -l walltime=48:0:0
+```
+Ocelote has 28 cores per node, thus the cpu time (cput) for a single node for two days is 28 * 48 hours = 1344. Here I am requesting the standard queue (-q)
 
 ### Setting up UA HPC w/o using password and DUO security
 
