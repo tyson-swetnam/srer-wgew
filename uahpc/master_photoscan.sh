@@ -13,12 +13,12 @@
 #BSUB -u uid
 #---------------------------------------------------------------------
 
-#name=`uid -n`-ib0
+#name=`uname -n`-ib0
 #echo $name
 #ip=`getent hosts $name | awk '{print $1}'`
 #echo $ip
 
-cd /home/uXX/uid/photoscan-pro
+cd ~/photoscan-pro
 
 # Server
 ./photoscan.sh --server --control 10.0.148.3 --dispatch 10.0.148.3
