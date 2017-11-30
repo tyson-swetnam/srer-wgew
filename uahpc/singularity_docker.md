@@ -81,6 +81,6 @@ Within Entwine container:
 
 ```
 entwine build /
--i <filename/folder>
+-i <filename/folder> /
 -o <output directory>
 ```
