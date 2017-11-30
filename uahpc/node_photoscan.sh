@@ -13,15 +13,15 @@
 #BSUB -u uid
 #---------------------------------------------------------------------
 
-#name=`uid -n`-ib0
+#name=`${USER} -n`-ib0
 #echo $name
 #ip=`getent hosts $name | awk '{print $1}'`
 #echo $ip
 
-cd /home/uXX/uid/photoscan-pro
+cd /home/uXX/${USER}/photoscan-pro
 
 # Node - uses elgato login node
-./photoscan.sh --node --dispatch 10.0.148.3 --root ~/xdisk/tswetnam
+./photoscan.sh --node --dispatch 10.0.148.3 --root ~/xdisk/${USER}
 # Server
 #./photoscan.sh --server --control 10.0.148.3 --dispatch 10.0.148.3
 
