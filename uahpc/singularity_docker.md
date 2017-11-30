@@ -59,16 +59,28 @@ qsub: job 640578.head1.cm.cluster ready
 
 ### Starting a Docker container within Singularity
 
+Run PDAL:
+
 ```
 singularity shell docker://pdal/pdal:latest
 ```
+
+Within the PDAL container:
+
+```
+pdal info ...
+```
+
+Run Entwine:
 
 ```
 singularity shell -B /xdisk/tswetnam:/mnt docker://connormanning/entwine:latest
 ```
 
-Within an Entwine container
+Within Entwine container:
 
 ```
-enwine build /
+entwine build /
+-i <filename/folder>
+-o <output directory>
 ```
