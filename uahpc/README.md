@@ -2,7 +2,7 @@
 
 You must have a valid UA NetID and have registered for an HPC account with [UA Services](https://account.arizona.edu/welcome)
 
-# Logging in
+## Logging in to UA HPC with `ssh`
 
 Open a terminal window and `ssh` into the HPC:
 
@@ -10,12 +10,13 @@ Open a terminal window and `ssh` into the HPC:
 ssh ${USER}@hpc.arizona.edu
 ```
 
-To use an interactive window you need to use the `-X` or `-Y` command:
+To use an interactive [X11 forwarding window](https://en.wikipedia.org/wiki/X_Window_System) you need to use the `-X` or `-Y` command:
 
 ```
 ssh -Y ${USER}@hpc.arizona.edu
 ```
-You will be prompted for your University of Arizona password and then a Dual Factor Authentication.
+
+You will be prompted for your University of Arizona password and then a [DUO Mobile](https://it.arizona.edu/documentation/install-duo-mobile-app-netid-plus) Dual Factor Authentication.
 
 After you're logged into the system you will be on the Bastion with options for which machine to log into:
 
@@ -29,13 +30,43 @@ $ ocelote               $ elgato                $ ice
 
 ```
 
-## Starting jobs on UA HPC El Gato
+To log into one of the machines type the name:
+
+```
+elgato
+```
+
+#### Starting a remote X11 instance
+
+Make sure you have an X11 service installed on your localhost
+
+Set the display on the local host
+
+```
+export DISPLAY=localhost:0.0
+```
+
+When you select one of the available HPC's from the Bastion use the `-Y` or `-X` flag to send the X11 display:
+
+```
+elgato -Y
+```
+
+## Logging in with UA HPC Ocelote On Demand
+
+The University of Arizona recently deployed an On Demand feature on its newest HPC Ocelote which runs a browser based file manager and Jupyter Notebooks.
+
+https://docs.hpc.arizona.edu/display/UAHPC/Special+Features
+
+https://ood.hpc.arizona.edu
+
+### Starting jobs on UA HPC El Gato
 
 El Gato uses `LSF` for its job submissions
 
 Attached are several `bsub` scripts for running jobs on El Gato
 
-## Starting jobs on UA HPC Ocelote
+### Starting jobs on UA HPC Ocelote
 
 Ocelote uses PBS to manage jobs. [UA HPC Manual wiki](https://confluence.arizona.edu/display/UAHPC/Training)
 
@@ -67,36 +98,6 @@ Now go ahead and log back in using your user id name
 ```
 ssh -Y uid@hpc.arizona.edu
 ```
-
-## Navigating the Bastion
-
-Logging into UA HPC you will land at the bastion where you must choose a system
-
-```
-This is a bastion host used to access the rest of the environment.
-
-Shortcut commands to access each resource
------------------------------------------
-Ocelote:                El Gato:                Cluster(ICE)/HTC/SMP:
-$ ocelote               $ elgato                $ ice
-```
-
-Select the system you wish to run Photoscan from
-
-```
-elgato -Y
-```
-
-## Starting a remote X11 instance
-
-Make sure you have an X11 service installed on your localhost
-
-Set the display on the local host
-
-```
-export DISPLAY=localhost:0.0
-```
-
 
 ### [Agisoft Photoscan](www.agisoft.com)
 
