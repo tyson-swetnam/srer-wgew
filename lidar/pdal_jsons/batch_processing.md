@@ -24,6 +24,9 @@ iget
 ```
 # Remove all running containers
 sudo docker rm --force $(sudo docker ps -aq)
+```
+
+```
 # Clear out all of the cached containers
 sudo docker rmi $(sudo docker images -q)
 ```
@@ -43,17 +46,18 @@ ls *.laz | cut -d. -f1 | xargs -P23 -I{} \
 
 ### Create new Ground Classification.
 
-You can  a JSON pipeline to modify the [parameter options](https://www.pdal.io/stages/filters.pmf.html#options)
+You can use a JSON pipeline to modify the [parameter options](https://www.pdal.io/stages/filters.pmf.html#options)
 
-I am looping through a directory, running a number of containers up to the number of cores on my VM.
+I am looping through the file directory, running the number of containers up to the number of cores on my VM minus one.
 
-`ls *.laz | cut -d. -f1 | xargs -P24 -I{} \` 
+`ls *.laz | cut -d. -f1 | xargs -P23 -I{} \` 
 
 a file named `loop_pmf.sh`
+
 ```
 #!bin/bash
 
-ls *.laz | cut -d. -f1 | xargs -P24 -I{} \
+ls *.laz | cut -d. -f1 | xargs -P23 -I{} \
 sudo docker run \
     -v ${HOME}:/home \
     -v ${PWD}:/data \
@@ -63,7 +67,9 @@ sudo docker run \
     --writers.las.filename=/home/lidar/{}-pmf-ground.laz
 
 ```
-file named `pmf.json`
+
+contents of file named `pmf.json`
+
 ```
 {
   "pipeline":[
@@ -78,7 +84,6 @@ file named `pmf.json`
   ]
 }
 ```
-
 
 Creating DEM and DSM models using a `for` loop in BASH
 
